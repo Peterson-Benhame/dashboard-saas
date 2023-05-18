@@ -1,0 +1,2931 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+  min-height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+code[class*='language-'] {
+  padding: 0;
+}
+
+
+    --sxs {
+      --sxs: 0 nextui-t-iFDYKV light-theme dark-theme
+    }
+  
+
+  
+    :root,
+    .nextui-t-iFDYKV {
+      --nextui-fonts-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      ;
+      --nextui-fonts-mono: Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
+      ;
+      --nextui-fontSizes-xs: 0.75rem;
+      --nextui-fontSizes-sm: 0.875rem;
+      --nextui-fontSizes-base: 1rem;
+      --nextui-fontSizes-md: 1rem;
+      --nextui-fontSizes-lg: 1.125rem;
+      --nextui-fontSizes-xl: 1.25rem;
+      --nextui-fontSizes-2xl: 1.5rem;
+      --nextui-fontSizes-3xl: 1.875rem;
+      --nextui-fontSizes-4xl: 2.25rem;
+      --nextui-fontSizes-5xl: 3rem;
+      --nextui-fontSizes-6xl: 3.75rem;
+      --nextui-fontSizes-7xl: 4.5rem;
+      --nextui-fontSizes-8xl: 6rem;
+      --nextui-fontSizes-9xl: 8rem;
+      --nextui-fontWeights-hairline: 100;
+      --nextui-fontWeights-thin: 200;
+      --nextui-fontWeights-light: 300;
+      --nextui-fontWeights-normal: 400;
+      --nextui-fontWeights-medium: 500;
+      --nextui-fontWeights-semibold: 600;
+      --nextui-fontWeights-bold: 700;
+      --nextui-fontWeights-extrabold: 800;
+      --nextui-fontWeights-black: 900;
+      --nextui-lineHeights-xs: 1;
+      --nextui-lineHeights-sm: 1.25;
+      --nextui-lineHeights-base: 1.5;
+      --nextui-lineHeights-md: 1.5;
+      --nextui-lineHeights-lg: 1.75;
+      --nextui-lineHeights-xl: 1.75;
+      --nextui-lineHeights-2xl: 2;
+      --nextui-lineHeights-3xl: 2.25;
+      --nextui-lineHeights-4xl: 2.5;
+      --nextui-lineHeights-5xl: 1;
+      --nextui-lineHeights-6xl: 1;
+      --nextui-lineHeights-7xl: 1;
+      --nextui-lineHeights-8xl: 1;
+      --nextui-lineHeights-9xl: 1;
+      --nextui-letterSpacings-tighter: -0.05em;
+      --nextui-letterSpacings-tight: -0.025em;
+      --nextui-letterSpacings-normal: 0;
+      --nextui-letterSpacings-wide: 0.025em;
+      --nextui-letterSpacings-wider: 0.05em;
+      --nextui-letterSpacings-widest: 0.1em;
+      --nextui-space-0: 0rem;
+      --nextui-space-1: 0.125rem;
+      --nextui-space-2: 0.25rem;
+      --nextui-space-3: 0.375rem;
+      --nextui-space-4: 0.5rem;
+      --nextui-space-5: 0.625rem;
+      --nextui-space-6: 0.75rem;
+      --nextui-space-7: 0.875rem;
+      --nextui-space-8: 1rem;
+      --nextui-space-9: 1.25rem;
+      --nextui-space-10: 1.5rem;
+      --nextui-space-11: 1.75rem;
+      --nextui-space-12: 2rem;
+      --nextui-space-13: 2.25rem;
+      --nextui-space-14: 2.5rem;
+      --nextui-space-15: 2.75rem;
+      --nextui-space-16: 3rem;
+      --nextui-space-17: 3.5rem;
+      --nextui-space-18: 4rem;
+      --nextui-space-20: 5rem;
+      --nextui-space-24: 6rem;
+      --nextui-space-28: 7rem;
+      --nextui-space-32: 8rem;
+      --nextui-space-36: 9rem;
+      --nextui-space-40: 10rem;
+      --nextui-space-44: 11rem;
+      --nextui-space-48: 12rem;
+      --nextui-space-52: 13rem;
+      --nextui-space-56: 14rem;
+      --nextui-space-60: 15rem;
+      --nextui-space-64: 16rem;
+      --nextui-space-72: 18rem;
+      --nextui-space-80: 20rem;
+      --nextui-space-96: 24rem;
+      --nextui-space-xs: 0.5rem;
+      --nextui-space-sm: 0.75rem;
+      --nextui-space-md: 1rem;
+      --nextui-space-lg: 1.25rem;
+      --nextui-space-xl: 2.25rem;
+      --nextui-space-2xl: 3rem;
+      --nextui-space-3xl: 5rem;
+      --nextui-space-4xl: 10rem;
+      --nextui-space-5xl: 14rem;
+      --nextui-space-6xl: 18rem;
+      --nextui-space-7xl: 24rem;
+      --nextui-space-8xl: 32rem;
+      --nextui-space-9xl: 40rem;
+      --nextui-space-min: min-content;
+      --nextui-space-max: max-content;
+      --nextui-space-fit: fit-content;
+      --nextui-space-screen: 100vw;
+      --nextui-space-full: 100%;
+      --nextui-space-px: 1px;
+      --nextui-radii-xs: 7px;
+      --nextui-radii-sm: 9px;
+      --nextui-radii-md: 12px;
+      --nextui-radii-base: 14px;
+      --nextui-radii-lg: 14px;
+      --nextui-radii-xl: 18px;
+      --nextui-radii-2xl: 24px;
+      --nextui-radii-3xl: 32px;
+      --nextui-radii-squared: 33%;
+      --nextui-radii-rounded: 50%;
+      --nextui-radii-pill: 9999px;
+      --nextui-zIndices-1: 100;
+      --nextui-zIndices-2: 200;
+      --nextui-zIndices-3: 300;
+      --nextui-zIndices-4: 400;
+      --nextui-zIndices-5: 500;
+      --nextui-zIndices-10: 1000;
+      --nextui-zIndices-max: 9999;
+      --nextui-borderWeights-light: 1px;
+      --nextui-borderWeights-normal: 2px;
+      --nextui-borderWeights-bold: 3px;
+      --nextui-borderWeights-extrabold: 4px;
+      --nextui-borderWeights-black: 5px;
+      --nextui-transitions-default: all 250ms ease;
+      --nextui-transitions-button: background 0.25s ease 0s, color 0.25s ease 0s, border-color 0.25s ease 0s, box-shadow 0.25s ease 0s, transform 0.25s ease 0s, opacity 0.25s ease 0s;
+      --nextui-transitions-avatar: box-shadow 0.25s ease 0s, opacity 0.25s ease 0s;
+      --nextui-transitions-card: transform 0.25s ease 0s, filter 0.25s ease 0s, box-shadow 0.25s ease 0s;
+      --nextui-transitions-dropdownItem: background 0.12s ease, transform 0.12s ease, color 0.12s ease, box-shadow 0.12s ease 0s;
+      --nextui-breakpoints-xs: 650px;
+      --nextui-breakpoints-sm: 960px;
+      --nextui-breakpoints-md: 1280px;
+      --nextui-breakpoints-lg: 1400px;
+      --nextui-breakpoints-xl: 1920px;
+      --nextui-colors-white: #ffffff;
+      --nextui-colors-black: #28243D;
+      --nextui-colors-primaryLight: var(--nextui-colors-blue200);
+      --nextui-colors-primaryLightHover: var(--nextui-colors-blue300);
+      --nextui-colors-primaryLightActive: var(--nextui-colors-blue400);
+      --nextui-colors-primaryLightContrast: var(--nextui-colors-blue600);
+      --nextui-colors-primary: var(--nextui-colors-blue600);
+      --nextui-colors-primaryBorder: var(--nextui-colors-blue500);
+      --nextui-colors-primaryBorderHover: var(--nextui-colors-blue600);
+      --nextui-colors-primarySolidHover: var(--nextui-colors-blue700);
+      --nextui-colors-primarySolidContrast: var(--nextui-colors-white);
+      --nextui-colors-primaryShadow: var(--nextui-colors-blue500);
+      --nextui-colors-secondaryLight: var(--nextui-colors-purple200);
+      --nextui-colors-secondaryLightHover: var(--nextui-colors-purple300);
+      --nextui-colors-secondaryLightActive: var(--nextui-colors-purple400);
+      --nextui-colors-secondaryLightContrast: var(--nextui-colors-purple600);
+      --nextui-colors-secondary: var(--nextui-colors-purple600);
+      --nextui-colors-secondaryBorder: var(--nextui-colors-purple500);
+      --nextui-colors-secondaryBorderHover: var(--nextui-colors-purple600);
+      --nextui-colors-secondarySolidHover: var(--nextui-colors-purple700);
+      --nextui-colors-secondarySolidContrast: var(--nextui-colors-white);
+      --nextui-colors-secondaryShadow: var(--nextui-colors-purple500);
+      --nextui-colors-successLight: var(--nextui-colors-green200);
+      --nextui-colors-successLightHover: var(--nextui-colors-green300);
+      --nextui-colors-successLightActive: var(--nextui-colors-green400);
+      --nextui-colors-successLightContrast: var(--nextui-colors-green700);
+      --nextui-colors-success: var(--nextui-colors-green600);
+      --nextui-colors-successBorder: var(--nextui-colors-green500);
+      --nextui-colors-successBorderHover: var(--nextui-colors-green600);
+      --nextui-colors-successSolidHover: var(--nextui-colors-green700);
+      --nextui-colors-successSolidContrast: var(--nextui-colors-white);
+      --nextui-colors-successShadow: var(--nextui-colors-green500);
+      --nextui-colors-warningLight: var(--nextui-colors-yellow200);
+      --nextui-colors-warningLightHover: var(--nextui-colors-yellow300);
+      --nextui-colors-warningLightActive: var(--nextui-colors-yellow400);
+      --nextui-colors-warningLightContrast: var(--nextui-colors-yellow700);
+      --nextui-colors-warning: var(--nextui-colors-yellow600);
+      --nextui-colors-warningBorder: var(--nextui-colors-yellow500);
+      --nextui-colors-warningBorderHover: var(--nextui-colors-yellow600);
+      --nextui-colors-warningSolidHover: var(--nextui-colors-yellow700);
+      --nextui-colors-warningSolidContrast: var(--nextui-colors-white);
+      --nextui-colors-warningShadow: var(--nextui-colors-yellow500);
+      --nextui-colors-errorLight: var(--nextui-colors-red200);
+      --nextui-colors-errorLightHover: var(--nextui-colors-red300);
+      --nextui-colors-errorLightActive: var(--nextui-colors-red400);
+      --nextui-colors-errorLightContrast: var(--nextui-colors-red600);
+      --nextui-colors-error: var(--nextui-colors-red600);
+      --nextui-colors-errorBorder: var(--nextui-colors-red500);
+      --nextui-colors-errorBorderHover: var(--nextui-colors-red600);
+      --nextui-colors-errorSolidHover: var(--nextui-colors-red700);
+      --nextui-colors-errorSolidContrast: var(--nextui-colors-white);
+      --nextui-colors-errorShadow: var(--nextui-colors-red500);
+      --nextui-colors-neutralLight: var(--nextui-colors-gray100);
+      --nextui-colors-neutralLightHover: var(--nextui-colors-gray200);
+      --nextui-colors-neutralLightActive: var(--nextui-colors-gray300);
+      --nextui-colors-neutralLightContrast: var(--nextui-colors-gray800);
+      --nextui-colors-neutral: var(--nextui-colors-gray600);
+      --nextui-colors-neutralBorder: var(--nextui-colors-gray400);
+      --nextui-colors-neutralBorderHover: var(--nextui-colors-gray500);
+      --nextui-colors-neutralSolidHover: var(--nextui-colors-gray600);
+      --nextui-colors-neutralSolidContrast: var(--nextui-colors-white);
+      --nextui-colors-neutralShadow: var(--nextui-colors-gray400);
+      --nextui-colors-gradient: linear-gradient(112deg, var(--nextui-colors-cyan600) -63.59%, var(--nextui-colors-pink600) -20.3%, var(--nextui-colors-blue600) 70.46%);
+      --nextui-colors-accents0: var(--nextui-colors-gray50);
+      --nextui-colors-accents1: var(--nextui-colors-gray100);
+      --nextui-colors-accents2: var(--nextui-colors-gray200);
+      --nextui-colors-accents3: var(--nextui-colors-gray300);
+      --nextui-colors-accents4: var(--nextui-colors-gray400);
+      --nextui-colors-accents5: var(--nextui-colors-gray500);
+      --nextui-colors-accents6: var(--nextui-colors-gray600);
+      --nextui-colors-accents7: var(--nextui-colors-gray700);
+      --nextui-colors-accents8: var(--nextui-colors-gray800);
+      --nextui-colors-accents9: var(--nextui-colors-gray900);
+      --nextui-colors-background: var(--nextui-colors-white);
+      --nextui-colors-backgroundAlpha: rgba(255, 255, 255, 0.8);
+      --nextui-colors-foreground: var(--nextui-colors-black);
+      --nextui-colors-backgroundContrast: var(--nextui-colors-white);
+      --nextui-colors-blue50: #ddcbff !important;
+      --nextui-colors-blue100: #E1EFFF;
+      --nextui-colors-blue200: #CEE4FE;
+      --nextui-colors-blue300: #B7D5F8;
+      --nextui-colors-blue400: #96C1F2;
+      --nextui-colors-blue500: #a778ff !important;
+      --nextui-colors-blue600: #9155fd !important;
+      --nextui-colors-blue700: #7932fd !important;
+      --nextui-colors-blue800: #004799;
+      --nextui-colors-blue900: #00254D;
+      --nextui-colors-purple50: #F7F2FD;
+      --nextui-colors-purple100: #F1E8FB;
+      --nextui-colors-purple200: #EADCF8;
+      --nextui-colors-purple300: #E0CBF5;
+      --nextui-colors-purple400: #D1B1F0;
+      --nextui-colors-purple500: #BC8EE9;
+      --nextui-colors-purple600: #7828C8;
+      --nextui-colors-purple700: #6622AA;
+      --nextui-colors-purple800: #4D1980;
+      --nextui-colors-purple900: #290E44;
+      --nextui-colors-green50: #F1FDF7;
+      --nextui-colors-green100: #E8FCF1;
+      --nextui-colors-green200: #DAFBE8;
+      --nextui-colors-green300: #C8F9DD;
+      --nextui-colors-green400: #ADF5CC;
+      --nextui-colors-green500: #88F1B6;
+      --nextui-colors-green600: #17C964;
+      --nextui-colors-green700: #13A452;
+      --nextui-colors-green800: #108944;
+      --nextui-colors-green900: #06371B;
+      --nextui-colors-yellow50: #FEF9F0;
+      --nextui-colors-yellow100: #FEF5E7;
+      --nextui-colors-yellow200: #FDEFD8;
+      --nextui-colors-yellow300: #FCE7C5;
+      --nextui-colors-yellow400: #FBDBA7;
+      --nextui-colors-yellow500: #F9CB80;
+      --nextui-colors-yellow600: #F5A524;
+      --nextui-colors-yellow700: #B97509;
+      --nextui-colors-yellow800: #925D07;
+      --nextui-colors-yellow900: #4E3104;
+      --nextui-colors-red50: #FEF0F5;
+      --nextui-colors-red100: #FEE7EF;
+      --nextui-colors-red200: #FDD8E5;
+      --nextui-colors-red300: #FCC5D8;
+      --nextui-colors-red400: #FAA8C5;
+      --nextui-colors-red500: #F881AB;
+      --nextui-colors-red600: #F31260;
+      --nextui-colors-red700: #B80A47;
+      --nextui-colors-red800: #910838;
+      --nextui-colors-red900: #4E041E;
+      --nextui-colors-cyan50: #F0FCFF;
+      --nextui-colors-cyan100: #E6FAFE;
+      --nextui-colors-cyan200: #D7F8FE;
+      --nextui-colors-cyan300: #C3F4FD;
+      --nextui-colors-cyan400: #A5EEFD;
+      --nextui-colors-cyan500: #7EE7FC;
+      --nextui-colors-cyan600: #06B7DB;
+      --nextui-colors-cyan700: #09AACD;
+      --nextui-colors-cyan800: #0E8AAA;
+      --nextui-colors-cyan900: #053B48;
+      --nextui-colors-pink50: #FFF0FB;
+      --nextui-colors-pink100: #FFE5F8;
+      --nextui-colors-pink200: #FFD6F3;
+      --nextui-colors-pink300: #FFC2EE;
+      --nextui-colors-pink400: #FFA3E5;
+      --nextui-colors-pink500: #FF7AD9;
+      --nextui-colors-pink600: #FF4ECD;
+      --nextui-colors-pink700: #D6009A;
+      --nextui-colors-pink800: #B80084;
+      --nextui-colors-pink900: #4D0037;
+      --nextui-colors-gray50: #F1F3F5;
+      --nextui-colors-gray100: #ECEEF0;
+      --nextui-colors-gray200: #E6E8EB;
+      --nextui-colors-gray300: #DFE3E6;
+      --nextui-colors-gray400: #D7DBDF;
+      --nextui-colors-gray500: #C1C8CD;
+      --nextui-colors-gray600: #889096;
+      --nextui-colors-gray700: #7E868C;
+      --nextui-colors-gray800: #687076;
+      --nextui-colors-gray900: #11181C;
+      --nextui-colors-text: var(--nextui-colors-gray900);
+      --nextui-colors-link: var(--nextui-colors-blue600);
+      --nextui-colors-codeLight: var(--nextui-colors-pink100);
+      --nextui-colors-code: var(--nextui-colors-pink600);
+      --nextui-colors-selection: var(--nextui-colors-blue200);
+      --nextui-colors-border: rgba(0, 0, 0, 0.15);
+      --nextui-shadows-xs: 0 2px 8px 1px rgb(104 112 118 / 0.07), 0 1px 1px -1px rgb(104 112 118 / 0.04);
+      --nextui-shadows-sm: 0 2px 8px 2px rgb(104 112 118 / 0.07), 0 2px 4px -1px rgb(104 112 118 / 0.04);
+      --nextui-shadows-md: 0 12px 20px 6px rgb(104 112 118 / 0.08);
+      --nextui-shadows-lg: 0 12px 34px 6px rgb(104 112 118 / 0.18);
+      --nextui-shadows-xl: 0 25px 65px 0px rgb(104 112 118 / 0.35);
+      --nextui-dropShadows-xs: drop-shadow(0 2px 4px rgb(104 112 118 / 0.07)) drop-shadow(0 1px 1px rgb(104 112 118 / 0.04));
+      --nextui-dropShadows-sm: drop-shadow(0 2px 8px rgb(104 112 118 / 0.07)) drop-shadow(0 2px 4px rgb(104 112 118 / 0.04));
+      --nextui-dropShadows-md: drop-shadow(0 4px 12px rgb(104 112 118 / 0.08)) drop-shadow(0 20px 8px rgb(104 112 118 / 0.04));
+      --nextui-dropShadows-lg: drop-shadow(0 12px 24px rgb(104 112 118 / 0.15)) drop-shadow(0 12px 14px rgb(104 112 118 / 0.1));
+      --nextui-dropShadows-xl: drop-shadow(0 25px 34px rgb(104 112 118 / 0.35))
+    }
+
+    .light-theme {
+      --nextui-colors-background: var(--nextui-colors-white);
+      --nextui-colors-backgroundAlpha: rgba(255, 255, 255, 0.8);
+      --nextui-colors-foreground: var(--nextui-colors-black);
+      --nextui-colors-backgroundContrast: var(--nextui-colors-white);
+      --nextui-colors-blue50: #EDF5FF;
+      --nextui-colors-blue100: #E1EFFF;
+      --nextui-colors-blue200: #CEE4FE;
+      --nextui-colors-blue300: #B7D5F8;
+      --nextui-colors-blue400: #96C1F2;
+      --nextui-colors-blue500: #5EA2EF;
+      --nextui-colors-blue600: #0072F5;
+      --nextui-colors-blue700: #005FCC;
+      --nextui-colors-blue800: #004799;
+      --nextui-colors-blue900: #00254D;
+      --nextui-colors-purple50: #F7F2FD;
+      --nextui-colors-purple100: #F1E8FB;
+      --nextui-colors-purple200: #EADCF8;
+      --nextui-colors-purple300: #E0CBF5;
+      --nextui-colors-purple400: #D1B1F0;
+      --nextui-colors-purple500: #BC8EE9;
+      --nextui-colors-purple600: #7828C8;
+      --nextui-colors-purple700: #6622AA;
+      --nextui-colors-purple800: #4D1980;
+      --nextui-colors-purple900: #290E44;
+      --nextui-colors-green50: #F1FDF7;
+      --nextui-colors-green100: #E8FCF1;
+      --nextui-colors-green200: #DAFBE8;
+      --nextui-colors-green300: #C8F9DD;
+      --nextui-colors-green400: #ADF5CC;
+      --nextui-colors-green500: #88F1B6;
+      --nextui-colors-green600: #17C964;
+      --nextui-colors-green700: #13A452;
+      --nextui-colors-green800: #108944;
+      --nextui-colors-green900: #06371B;
+      --nextui-colors-yellow50: #FEF9F0;
+      --nextui-colors-yellow100: #FEF5E7;
+      --nextui-colors-yellow200: #FDEFD8;
+      --nextui-colors-yellow300: #FCE7C5;
+      --nextui-colors-yellow400: #FBDBA7;
+      --nextui-colors-yellow500: #F9CB80;
+      --nextui-colors-yellow600: #F5A524;
+      --nextui-colors-yellow700: #B97509;
+      --nextui-colors-yellow800: #925D07;
+      --nextui-colors-yellow900: #4E3104;
+      --nextui-colors-red50: #FEF0F5;
+      --nextui-colors-red100: #FEE7EF;
+      --nextui-colors-red200: #FDD8E5;
+      --nextui-colors-red300: #FCC5D8;
+      --nextui-colors-red400: #FAA8C5;
+      --nextui-colors-red500: #F881AB;
+      --nextui-colors-red600: #F31260;
+      --nextui-colors-red700: #B80A47;
+      --nextui-colors-red800: #910838;
+      --nextui-colors-red900: #4E041E;
+      --nextui-colors-cyan50: #F0FCFF;
+      --nextui-colors-cyan100: #E6FAFE;
+      --nextui-colors-cyan200: #D7F8FE;
+      --nextui-colors-cyan300: #C3F4FD;
+      --nextui-colors-cyan400: #A5EEFD;
+      --nextui-colors-cyan500: #7EE7FC;
+      --nextui-colors-cyan600: #06B7DB;
+      --nextui-colors-cyan700: #09AACD;
+      --nextui-colors-cyan800: #0E8AAA;
+      --nextui-colors-cyan900: #053B48;
+      --nextui-colors-pink50: #FFF0FB;
+      --nextui-colors-pink100: #FFE5F8;
+      --nextui-colors-pink200: #FFD6F3;
+      --nextui-colors-pink300: #FFC2EE;
+      --nextui-colors-pink400: #FFA3E5;
+      --nextui-colors-pink500: #FF7AD9;
+      --nextui-colors-pink600: #FF4ECD;
+      --nextui-colors-pink700: #D6009A;
+      --nextui-colors-pink800: #B80084;
+      --nextui-colors-pink900: #4D0037;
+      --nextui-colors-gray50: #F1F3F5;
+      --nextui-colors-gray100: #ECEEF0;
+      --nextui-colors-gray200: #E6E8EB;
+      --nextui-colors-gray300: #DFE3E6;
+      --nextui-colors-gray400: #D7DBDF;
+      --nextui-colors-gray500: #C1C8CD;
+      --nextui-colors-gray600: #889096;
+      --nextui-colors-gray700: #7E868C;
+      --nextui-colors-gray800: #687076;
+      --nextui-colors-gray900: #11181C;
+      --nextui-colors-text: var(--nextui-colors-gray900);
+      --nextui-colors-link: var(--nextui-colors-blue600);
+      --nextui-colors-codeLight: var(--nextui-colors-pink100);
+      --nextui-colors-code: var(--nextui-colors-pink600);
+      --nextui-colors-selection: var(--nextui-colors-blue200);
+      --nextui-colors-border: rgba(0, 0, 0, 0.15);
+      --nextui-shadows-xs: 0 2px 8px 1px rgb(104 112 118 / 0.07), 0 1px 1px -1px rgb(104 112 118 / 0.04);
+      --nextui-shadows-sm: 0 2px 8px 2px rgb(104 112 118 / 0.07), 0 2px 4px -1px rgb(104 112 118 / 0.04);
+      --nextui-shadows-md: 0 12px 20px 6px rgb(104 112 118 / 0.08);
+      --nextui-shadows-lg: 0 12px 34px 6px rgb(104 112 118 / 0.18);
+      --nextui-shadows-xl: 0 25px 65px 0px rgb(104 112 118 / 0.35);
+      --nextui-dropShadows-xs: drop-shadow(0 2px 4px rgb(104 112 118 / 0.07)) drop-shadow(0 1px 1px rgb(104 112 118 / 0.04));
+      --nextui-dropShadows-sm: drop-shadow(0 2px 8px rgb(104 112 118 / 0.07)) drop-shadow(0 2px 4px rgb(104 112 118 / 0.04));
+      --nextui-dropShadows-md: drop-shadow(0 4px 12px rgb(104 112 118 / 0.08)) drop-shadow(0 20px 8px rgb(104 112 118 / 0.04));
+      --nextui-dropShadows-lg: drop-shadow(0 12px 24px rgb(104 112 118 / 0.15)) drop-shadow(0 12px 14px rgb(104 112 118 / 0.1));
+      --nextui-dropShadows-xl: drop-shadow(0 25px 34px rgb(104 112 118 / 0.35))
+    }
+
+    .dark-theme {
+      --nextui-colors-background: var(--nextui-colors-black);
+        --nextui-colors-backgroundAlpha: rgba(0, 0, 0, 0.6);
+        --nextui-colors-foreground: var(--nextui-colors-white);
+        --nextui-colors-backgroundContrast: var(--nextui-colors-accents0);
+        --nextui-colors-blue50: #10253E;
+        --nextui-colors-blue100: #102C4C;
+        --nextui-colors-blue200: #0F3158;
+        --nextui-colors-blue300: #0D3868;
+        --nextui-colors-blue400: #0A4281;
+        --nextui-colors-blue500: #0952A5;
+        --nextui-colors-blue600: #0072F5;
+        --nextui-colors-blue700: #3694FF;
+        --nextui-colors-blue800: #3694FF;
+        --nextui-colors-blue900: #EAF4FF;
+        --nextui-colors-purple50: #1F0A33;
+        --nextui-colors-purple100: #240C3C;
+        --nextui-colors-purple200: #2E0F4D;
+        --nextui-colors-purple300: #3B1362;
+        --nextui-colors-purple400: #451773;
+        --nextui-colors-purple500: #571D91;
+        --nextui-colors-purple600: #7828C8;
+        --nextui-colors-purple700: #9750DD;
+        --nextui-colors-purple800: #B583E7;
+        --nextui-colors-purple900: #F7ECFC;
+        --nextui-colors-green50: #042F14;
+        --nextui-colors-green100: #06381B;
+        --nextui-colors-green200: #074A24;
+        --nextui-colors-green300: #0A6130;
+        --nextui-colors-green400: #0B7439;
+        --nextui-colors-green500: #0F9549;
+        --nextui-colors-green600: #17C964;
+        --nextui-colors-green700: #41EC8B;
+        --nextui-colors-green800: #78F2AD;
+        --nextui-colors-green900: #ECFDF4;
+        --nextui-colors-yellow50: #3A2503;
+        --nextui-colors-yellow100: #442B03;
+        --nextui-colors-yellow200: #583804;
+        --nextui-colors-yellow300: #704705;
+        --nextui-colors-yellow400: #845306;
+        --nextui-colors-yellow500: #A66908;
+        --nextui-colors-yellow600: #F5A524;
+        --nextui-colors-yellow700: #F6AD37;
+        --nextui-colors-yellow800: #F8C572;
+        --nextui-colors-yellow900: #FEF7EC;
+        --nextui-colors-red50: #300313;
+        --nextui-colors-red100: #300313;
+        --nextui-colors-red200: #44041A;
+        --nextui-colors-red300: #5C0523;
+        --nextui-colors-red400: #6F062B;
+        --nextui-colors-red500: #910838;
+        --nextui-colors-red600: #F31260;
+        --nextui-colors-red700: #F4256D;
+        --nextui-colors-red800: #F75F94;
+        --nextui-colors-red900: #FDD8E5;
+        --nextui-colors-cyan50: #012A32;
+        --nextui-colors-cyan100: #023A46;
+        --nextui-colors-cyan200: #024B5A;
+        --nextui-colors-cyan300: #036072;
+        --nextui-colors-cyan400: #037086;
+        --nextui-colors-cyan500: #048EA9;
+        --nextui-colors-cyan600: #06B7DB;
+        --nextui-colors-cyan700: #33D9FA;
+        --nextui-colors-cyan800: #6FE4FB;
+        --nextui-colors-cyan900: #EBFBFE;
+        --nextui-colors-pink50: #330025;
+        --nextui-colors-pink100: #470033;
+        --nextui-colors-pink200: #5C0042;
+        --nextui-colors-pink300: #750054;
+        --nextui-colors-pink400: #8A0063;
+        --nextui-colors-pink500: #AD007C;
+        --nextui-colors-pink600: #FF4ECD;
+        --nextui-colors-pink700: #FF2EC4;
+        --nextui-colors-pink800: #FF6BD5;
+        --nextui-colors-pink900: #FFEBF9;
+        --nextui-colors-gray50: #16181A;
+        --nextui-colors-gray100: #26292B;
+        --nextui-colors-gray200: #2B2F31;
+        --nextui-colors-gray300: #313538;
+        --nextui-colors-gray400: #3A3F42;
+        --nextui-colors-gray500: #4C5155;
+        --nextui-colors-gray600: #697177;
+        --nextui-colors-gray700: #787F85;
+        --nextui-colors-gray800: #9BA1A6;
+        --nextui-colors-gray900: #ECEDEE;
+        --nextui-colors-primaryLight: var(--nextui-colors-blue50);
+        --nextui-colors-primaryLightHover: var(--nextui-colors-blue100);
+        --nextui-colors-primaryLightActive: var(--nextui-colors-blue200);
+        --nextui-colors-primaryLightContrast: var(--nextui-colors-blue600);
+        --nextui-colors-secondaryLight: var(--nextui-colors-purple50);
+        --nextui-colors-secondaryLightHover: var(--nextui-colors-purple100);
+        --nextui-colors-secondaryLightActive: var(--nextui-colors-purple200);
+        --nextui-colors-secondaryLightContrast: var(--nextui-colors-purple800);
+        --nextui-colors-secondary: var(--nextui-colors-purple700);
+        --nextui-colors-secondaryBorder: var(--nextui-colors-purple500);
+        --nextui-colors-secondaryBorderHover: var(--nextui-colors-purple600);
+        --nextui-colors-secondarySolidHover: var(--nextui-colors-purple700);
+        --nextui-colors-secondaryShadow: var(--nextui-colors-purple500);
+        --nextui-colors-successLight: var(--nextui-colors-green50);
+        --nextui-colors-successLightHover: var(--nextui-colors-green100);
+        --nextui-colors-successLightActive: var(--nextui-colors-green200);
+        --nextui-colors-warningLight: var(--nextui-colors-yellow50);
+        --nextui-colors-warningLightHover: var(--nextui-colors-yellow100);
+        --nextui-colors-warningLightActive: var(--nextui-colors-yellow200);
+        --nextui-colors-errorLight: var(--nextui-colors-red50);
+        --nextui-colors-errorLightHover: var(--nextui-colors-red100);
+        --nextui-colors-errorLightActive: var(--nextui-colors-red200);
+        --nextui-colors-errorLightContrast: var(--nextui-colors-red700);
+        --nextui-colors-neutralLight: var(--nextui-colors-gray200);
+        --nextui-colors-neutralLightHover: var(--nextui-colors-gray300);
+        --nextui-colors-neutralLightActive: var(--nextui-colors-gray400);
+        --nextui-colors-neutralSolidContrast: var(--nextui-colors-white);
+        --nextui-colors-text: var(--nextui-colors-gray900);
+        --nextui-colors-link: var(--nextui-colors-blue700);
+        --nextui-colors-codeLight: var(--nextui-colors-cyan50);
+        --nextui-colors-code: var(--nextui-colors-cyan600);
+        --nextui-colors-selection: var(--nextui-colors-pink800);
+        --nextui-colors-border: rgba(255, 255, 255, 0.15);
+        --nextui-shadows-xs: 0 2px 8px 1px rgb(0 0 0 / 0.07), 0 1px 1px -1px rgb(0 0 0 / 0.04);
+        --nextui-shadows-sm: 0 2px 8px 2px rgb(0 0 0 / 0.07), 0 2px 4px -1px rgb(0 0 0 / 0.04);
+        --nextui-shadows-md: 0 12px 20px 6px rgb(0 0 0 / 0.08);
+        --nextui-shadows-lg: 0 12px 34px 6px rgb(0 0 0 / 0.18);
+        --nextui-shadows-xl: 0 25px 65px 0px rgb(0 0 0 / 0.35);
+        --nextui-dropShadows-xs: drop-shadow(0 2px 4px rgb(0 0 0 / 0.07)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.04));
+        --nextui-dropShadows-sm: drop-shadow(0 2px 8px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 4px rgb(0 0 0 / 0.04));
+        --nextui-dropShadows-md: drop-shadow(0 4px 12px rgb(0 0 0 / 0.08)) drop-shadow(0 20px 8px rgb(0 0 0 / 0.04));
+        --nextui-dropShadows-lg: drop-shadow(0 12px 24px rgb(0 0 0 / 0.15)) drop-shadow(0 12px 14px rgb(0 0 0 / 0.1));
+        --nextui-dropShadows-xl: drop-shadow(0 25px 34px rgb(0 0 0 / 0.35))
+    }
+    
+  
+    --sxs {
+      --sxs: 1 nextui-k-dPxXDy nextui-k-jjQGhG nextui-k-eKsxVP nextui-k-fehnNV nextui-k-dSVASG nextui-k-fLOxFp nextui-k-itSsug nextui-k-kczHuk nextui-k-gWfstQ nextui-k-jvYHWg nextui-k-khapXo nextui-k-jtoOCl nextui-k-coIGzE nextui-k-gJKQzh nextui-k-fyNack nextui-k-fAlzUo nextui-k-dfOUfo nextui-k-AVtYN eKDgFc cArocB
+    }
+  
+    @media  (prefers-reduced-motion: no-preference) {
+      @keyframes nextui-k-dPxXDy {
+        0% {
+          opacity: 0;
+          transform: scale(0.25)
+        }
+  
+        30% {
+          opacity: 1
+        }
+  
+        80% {
+          opacity: 0.5
+        }
+  
+        100% {
+          transform: scale(28);
+          opacity: 0
+        }
+      }
+  
+      @keyframes nextui-k-jjQGhG {
+        0% {
+          background-position: 200% 0
+        }
+  
+        to {
+          background-position: -200% 0
+        }
+      }
+  
+      @keyframes nextui-k-eKsxVP {
+        0% {
+          opacity: 1
+        }
+  
+        100% {
+          opacity: 0.15
+        }
+      }
+  
+      @keyframes nextui-k-fehnNV {
+        0% {
+          transform: rotate(0deg)
+        }
+  
+        100% {
+          transform: rotate(360deg)
+        }
+      }
+  
+      @keyframes nextui-k-dSVASG {
+        0% {
+          transform: translate(0px, 0px)
+        }
+  
+        50% {
+          transform: translate(0, calc(calc(var(--nextui--loadingSize)*-1) * 1.4))
+        }
+  
+        100% {
+          transform: translate(0px, 0px)
+        }
+      }
+  
+      @keyframes nextui-k-fLOxFp {
+        0% {
+          opacity: 0.2
+        }
+  
+        20% {
+          opacity: 1
+        }
+  
+        100% {
+          opacity: 0.2
+        }
+      }
+  
+      @keyframes nextui-k-itSsug {
+        0% {
+          left: -40%
+        }
+  
+        100% {
+          left: 100%
+        }
+      }
+  
+      @keyframes nextui-k-kczHuk {
+        0% {
+          transform: scale(1)
+        }
+  
+        60% {
+          transform: scale(var(--nextui--paginationScaleTransform))
+        }
+  
+        100% {
+          transform: scale(1)
+        }
+      }
+  
+      @keyframes nextui-k-gWfstQ {
+        100% {
+          stroke-dashoffset: 0
+        }
+      }
+  
+      @keyframes nextui-k-jvYHWg {
+        0% {
+          opacity: 0;
+          transform: scale(0.2) translate(50%, -50%)
+        }
+  
+        60% {
+          opacity: 0.75;
+          transform: scale(1.2) translate(50%, -50%)
+        }
+  
+        100% {
+          opacity: 1;
+          transform: scale(1) translate(50%, -50%)
+        }
+      }
+  
+      @keyframes nextui-k-khapXo {
+        0% {
+          opacity: 1;
+          transform: scale(1) translate(50%, -50%)
+        }
+  
+        100% {
+          opacity: 0;
+          transform: scale(0.2) translate(50%, -50%)
+        }
+      }
+  
+      @keyframes nextui-k-jtoOCl {
+        0% {
+          opacity: 0;
+          transform: scale(0.2) translate(-50%, -50%)
+        }
+  
+        60% {
+          opacity: 0.75;
+          transform: scale(1.2) translate(-50%, -50%)
+        }
+  
+        100% {
+          opacity: 1;
+          transform: scale(1) translate(-50%, -50%)
+        }
+      }
+  
+      @keyframes nextui-k-coIGzE {
+        0% {
+          opacity: 1;
+          transform: scale(1) translate(-50%, -50%)
+        }
+  
+        100% {
+          opacity: 0;
+          transform: scale(0.2) translate(-50%, -50%)
+        }
+      }
+  
+      @keyframes nextui-k-gJKQzh {
+        0% {
+          opacity: 0;
+          transform: scale(0.2) translate(50%, 50%)
+        }
+  
+        60% {
+          opacity: 0.75;
+          transform: scale(1.2) translate(50%, 50%)
+        }
+  
+        100% {
+          opacity: 1;
+          transform: scale(1) translate(50%, 50%)
+        }
+      }
+  
+      @keyframes nextui-k-fyNack {
+        0% {
+          opacity: 1;
+          transform: scale(1) translate(50%, 50%)
+        }
+  
+        100% {
+          opacity: 0;
+          transform: scale(0.2) translate(50%, 50%)
+        }
+      }
+  
+      @keyframes nextui-k-fAlzUo {
+        0% {
+          opacity: 0;
+          transform: scale(0.2) translate(-50%, 50%)
+        }
+  
+        60% {
+          opacity: 0.75;
+          transform: scale(1.2) translate(-50%, 50%)
+        }
+  
+        100% {
+          opacity: 1;
+          transform: scale(1) translate(-50%, 50%)
+        }
+      }
+  
+      @keyframes nextui-k-dfOUfo {
+        0% {
+          opacity: 1;
+          transform: scale(1) translate(-50%, 50%)
+        }
+  
+        100% {
+          opacity: 0;
+          transform: scale(0.2) translate(-50%, 50%)
+        }
+      }
+  
+      @keyframes nextui-k-AVtYN {
+        0% {
+          opacity: 1
+        }
+  
+        50% {
+          opacity: 0.4;
+          transform: scale(0.5)
+        }
+  
+        100% {
+          opacity: 1
+        }
+      }
+  
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+        text-rendering: geometricPrecision;
+        -webkit-tap-highlight-color: transparent
+      }
+  
+      html {
+        font-size: var(--nextui-fontSizes-base)
+      }
+  
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        position: relative;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        font-size: var(--nextui-fontSizes-base);
+        line-height: var(--nextui-lineHeights-md);
+        font-family: var(--nextui-fonts-sans)
+      }
+  
+      html,
+      body {
+        background-color: var(--nextui-colors-background);
+        color: var(--nextui-colors-text)
+      }
+  
+      p,
+      small {
+        color: inherit;
+        letter-spacing: var(--nextui-letterSpacings-tighter);
+        font-weight: var(--nextui-fontWeights-normal);
+        font-family: var(--nextui-fonts-sans)
+      }
+  
+      p {
+        font-size: var(--nextui-fontSizes-base);
+        line-height: var(--nextui-lineHeights-lg)
+      }
+  
+      small {
+        margin: 0;
+        line-height: var(--nextui-lineHeights-xs);
+        font-size: var(--nextui-fontSizes-xs)
+      }
+  
+      b {
+        font-weight: var(--nextui-fontWeights-semibold)
+      }
+  
+      span {
+        font-size: inherit;
+        color: inherit;
+        font-weight: inherit
+      }
+  
+      img {
+        max-width: 100%
+      }
+  
+      a {
+        cursor: pointer;
+        font-size: inherit;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-box-align: center;
+        align-items: center;
+        color: var(--nextui-colors-link);
+        text-decoration: none
+      }
+  
+      a:hover {
+        text-decoration: none
+      }
+  
+      ul,
+      ol {
+        padding: 0;
+        list-style-type: none;
+        margin: var(--nextui-space-sm) var(--nextui-space-sm) var(--nextui-space-sm) var(--nextui-space-lg);
+        color: var(--nextui-colors-foreground)
+      }
+  
+      ol {
+        list-style-type: decimal
+      }
+  
+      li {
+        margin-bottom: var(--nextui-space-5);
+        font-size: var(--nextui-fontSizes-base);
+        line-height: var(--nextui-lineHeights-lg)
+      }
+  
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: inherit;
+        margin: 0 0 var(--nextui-space-5) 0
+      }
+  
+      h1 {
+        letter-spacing: var(--nextui-letterSpacings-tighter);
+        font-size: var(--nextui-fontSizes-5xl);
+        line-height: var(--nextui-lineHeights-md);
+        font-weight: var(--nextui-fontWeights-bold)
+      }
+  
+      h2 {
+        letter-spacing: var(--nextui-letterSpacings-tighter);
+        font-size: var(--nextui-fontSizes-4xl);
+        font-weight: var(--nextui-fontWeights-semibold)
+      }
+  
+      h3 {
+        letter-spacing: var(--nextui-letterSpacings-tighter);
+        font-size: var(--nextui-fontSizes-2xl);
+        font-weight: var(--nextui-fontWeights-semibold)
+      }
+  
+      h4 {
+        letter-spacing: var(--nextui-letterSpacings-tighter);
+        font-size: var(--nextui-fontSizes-xl);
+        font-weight: var(--nextui-fontWeights-semibold)
+      }
+  
+      h5 {
+        letter-spacing: var(--nextui-letterSpacings-tight);
+        font-size: var(--nextui-fontSizes-md);
+        font-weight: var(--nextui-fontWeights-semibold)
+      }
+  
+      h6 {
+        letter-spacing: var(--nextui-letterSpacings-tight);
+        font-size: var(--nextui-fontSizes-sm);
+        font-weight: var(--nextui-fontWeights-semibold)
+      }
+  
+      button,
+      input,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+        margin: 0
+      }
+  
+      button:focus,
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none
+      }
+  
+      code {
+        color: var(--nextui-colors-code);
+        padding: var(--nextui-space-1) var(--nextui-space-2);
+        border-radius: var(--nextui-radii-xs);
+        background: var(--nextui-colors-codeLight);
+        font-family: var(--nextui-fonts-mono);
+        font-size: var(--nextui-fontSizes-sm);
+        white-space: pre-wrap;
+        transition: opacity 0.25s ease 0s
+      }
+  
+      code:hover {
+        opacity: 0.8
+      }
+  
+      pre {
+        overflow: auto;
+        white-space: pre;
+        text-align: left;
+        font-size: var(--nextui-fontSizes-sm);
+        border-radius: var(--nextui-radii-lg);
+        padding: var(--nextui-space-md) var(--nextui-space-lg);
+        margin: var(--nextui-space-lg) 0;
+        font-family: var(--nextui-fonts-mono);
+        line-height: var(--nextui-lineHeights-md);
+      }
+  
+      pre code {
+        color: var(--nextui-colors-foreground);
+        font-size: var(--nextui-fontSizes-sm);
+        line-height: var(--nextui-lineHeights-sm);
+        white-space: pre
+      }
+  
+      pre code:before,
+      pre code:after {
+        display: none
+      }
+  
+      pre p {
+        margin: 0
+      }
+  
+      pre::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+        background: transparent
+      }
+  
+      hr {
+        background: var(--nextui-colors-border);
+        border-color: transparent;
+        border-width: 0px;
+        border-style: none;
+        height: 1px
+      }
+  
+      details {
+        background-color: var(--nextui-colors-accents1);
+        border: none
+      }
+  
+      details:focus,
+      details:hover,
+      details:active {
+        outline: none
+      }
+  
+      summary {
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+        list-style: none;
+        outline: none
+      }
+  
+      summary::-webkit-details-marker,
+      summary::before {
+        display: none
+      }
+  
+      summary::-moz-list-bullet {
+        font-size: 0
+      }
+  
+      summary:focus,
+      summary:hover,
+      summary:active {
+        outline: none;
+        list-style: none
+      }
+  
+      ::selection {
+        background-color: var(--nextui-colors-selection)
+      }
+  
+      blockquote {
+        padding: var(--nextui-space-md) var(--nextui-space-lg);
+        color: var(--nextui-colors-accents7);
+        background-color: var(--nextui-colors-accents0);
+        border-radius: var(--nextui-radii-lg);
+        margin: var(--nextui-space-10) 0
+      }
+  
+      blockquote *:first-child {
+        margin-top: 0
+      }
+  
+      blockquote *:last-child {
+        margin-bottom: 0
+      }
+  
+      kbd {
+        width: -moz-fit-content;
+        width: fit-content;
+        text-align: center;
+        display: inline-block;
+        color: var(--nextui-colors-accents8);
+        background: var(--nextui-colors-accents0);
+        border: 1px solid var(--nextui-colors-border);
+        box-shadow: 0 0 1px 0 rgb(0 0 0 / 14%);
+        font-family: var(--nextui-fonts-sans);
+        border-radius: 5px;
+        padding: var(--nextui-space-1) var(--nextui-space-3);
+        margin-left: var(--nextui-space-1);
+        margin-right: var(--nextui-space-1);
+        line-height: var(--nextui-lineHeights-sm);
+        font-size: var(--nextui-fontSizes-sm)
+      }
+  
+      kbd+kbd {
+        margin-left: var(--nextui-space-2)
+      }
+  
+      dl,
+      dd,
+      hr,
+      figure,
+      p {
+        margin: 0
+      }
+  
+      :root {
+        --nextui--navbarHeight: 76px;
+        --nextui--navbarCompactHeight: calc(var(--nextui--navbarHeight) * 0.7);
+        --nextui--navbarTextColor: var(--nextui-colors-text);
+        --nextui--navbarBackgroundColor: var(--nextui-colors-background);
+        --nextui--navbarBlurBackgroundColor: var(--nextui-colors-backgroundAlpha);
+        --nextui--navbarItemMaxHeight: calc(var(--nextui--navbarHeight) * 0.5);
+        --nextui--navbarCompactItemMaxHeight: calc(var(--nextui--navbarHeight) * 0.5);
+        --nextui--navbarBorderColor: var(--nextui-colors-border);
+        --nextui--navbarBorderRadius: var(--nextui-radii-lg);
+        --nextui--navbarPadding: var(--nextui-space-10);
+        --nextui--navbarFloatingMargin: var(--nextui-space-10);
+        --nextui--navbarContainerMaxWidth: var(--nextui-breakpoints-lg);
+        --nextui--navbarShadow: var(--nextui-shadows-md);
+        --nextui--navbarBorderWeight: var(--nextui-borderWeights-light);
+        --nextui--navbarBlur: 10px
+      }
+    }
+  
+    --sxs {
+      --sxs: 2 nextui-c-lesPJm nextui-c-hhqfap nextui-c-egxOLa nextui-c-fyNvBR nextui-c-PJLV nextui-c-fBJhTY nextui-c-gpbAMl nextui-c-jklhtj nextui-c-dGYPDG nextui-c-kOXsPe nextui-c-eYXmfb nextui-c-iWjDFM nextui-c-bDGMeb nextui-c-dIWzTP nextui-c-STltJ nextui-c-jjKPqy nextui-c-iFHsrU nextui-c-itiWTf nextui-c-huiNHE nextui-c-eJPKci nextui-c-iTPCAT nextui-c-ewlcFW nextui-c-ektsXM nextui-c-jcFxGD nextui-c-iwmZdB nextui-c-ghxhhI nextui-c-eXOOPO nextui-c-jeuecp nextui-c-gJvMas nextui-c-bZLhCa nextui-c-kRHeuF nextui-c-BDLTQ nextui-c-jMTBsW nextui-c-eFfoBo nextui-c-jxECYO
+    }
+  
+    @media  (max-width: 767px) {
+      .nextui-c-lesPJm {
+        box-sizing: border-box
+      }
+  
+      .nextui-c-hhqfap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: auto;
+        color: var(--nextui--navbarTextColor);
+        z-index: var(--nextui-zIndices-2)
+      }
+  
+      .nextui-c-egxOLa {
+        width: 100%;
+        height: var(--nextui--navbarHeight);
+        min-height: var(--nextui--navbarHeight);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        box-sizing: border-box;
+        color: inherit;
+        padding-left: var(--nextui--navbarPadding);
+        padding-right: var(--nextui--navbarPadding);
+        background: var(--nextui--navbarBackgroundColor);
+        max-width: var(--nextui--navbarContainerMaxWidth);
+        z-index: var(--nextui-zIndices-5)
+      }
+  
+      @media (max-width: 650px) {
+        .nextui-c-egxOLa {
+          --nextui--navbarPadding: var(--nextui-space-6);
+          --nextui--navbarFloatingMargin: var(--nextui-space-6)
+        }
+      }
+  
+      .nextui-c-fyNvBR {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        background: transparent;
+        align-items: center;
+        text-decoration: none;
+        font-size: var(--nextui-fontSizes-base);
+        white-space: nowrap;
+        box-sizing: border-box
+      }
+  
+      .nextui-c-fBJhTY {
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: var(--nextui-space-2);
+        transition: box-shadow 0.25s ease 0s, opacity 0.25s ease 0s
+      }
+  
+      .nextui-c-gpbAMl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        pointer-events: none;
+        width: 22px;
+        height: 22px
+      }
+  
+      .nextui-c-gpbAMl .line {
+        height: 1px;
+        width: 100%;
+        background-color: var(--nextui--navbarTextColor);
+        transition: transform 0.3s ease
+      }
+  
+      .nextui-c-gpbAMl .line.top {
+        transform: translateY(-4px) rotate(0deg)
+      }
+  
+      .nextui-c-gpbAMl .line.bottom {
+        transform: translateY(4px) rotate(0deg)
+      }
+  
+      .nextui-c-jklhtj {
+        margin: 0;
+        list-style: none;
+        line-height: var(--nextui-lineHeights-xs)
+      }
+  
+      .nextui-c-jklhtj li {
+        margin-bottom: 0
+      }
+  
+      .nextui-c-dGYPDG {
+        --nextui--navbarContentItemGap: var(--nextui-space-10);
+        --nextui--navbarContentItemHorizontalPadding: var(--nextui-space-10);
+        display: flex;
+        height: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: var(--nextui--navbarContentItemGap);
+        color: inherit
+      }
+  
+      .nextui-c-kOXsPe {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        line-height: inherit
+      }
+  
+      .nextui-c-eYXmfb {
+        --nextui--navbarItemFontSize: inherit;
+        --nextui--navbarItemFontWeight: var(--nextui-fontWeights-normal);
+        font-size: var(--nextui--navbarItemFontSize);
+        font-weight: var(--nextui--navbarItemFontWeight);
+        position: relative
+      }
+  
+      .nextui-c-eYXmfb>* {
+        z-index: var(--nextui-zIndices-2);
+        font-size: inherit !important;
+        font-weight: inherit !important
+      }
+  
+      .nextui-c-eYXmfb:before {
+        opacity: 0;
+        z-index: var(--nextui-zIndices-1);
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: var(--nextui-radii-sm)
+      }
+  
+      .nextui-c-eYXmfb:after {
+        opacity: 0;
+        z-index: var(--nextui-zIndices-1);
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: var(--nextui--navbarItemUnderlineHeight);
+        border-radius: 0px;
+        background: var(--nextui--navbarItemActiveColor)
+      }
+  
+      .nextui-c-iWjDFM {
+        --nextui--buttonBorderRadius: var(--nextui-radii-md);
+        --nextui--buttonPressedScale: 0.97;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-appearance: none;
+        appearance: none;
+        box-sizing: border-box;
+        font-weight: var(--nextui-fontWeights-medium);
+        -webkit-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        line-height: var(--nextui-lineHeights-sm);
+        text-align: center;
+        white-space: nowrap;
+        transition: var(--nextui-transitions-button);
+        position: relative;
+        overflow: hidden;
+        border: none;
+        cursor: pointer;
+        pointer-events: auto;
+        padding: 0;
+        border-radius: var(--nextui--buttonBorderRadius)
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-iWjDFM {
+          transition: none
+        }
+      }
+  
+      .nextui-c-iWjDFM .nextui-button-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: var(--nextui-zIndices-2)
+      }
+  
+      .nextui-c-iWjDFM .nextui-button-text p,
+      .nextui-c-iWjDFM .nextui-button-text pre,
+      .nextui-c-iWjDFM .nextui-button-text div {
+        margin: 0
+      }
+  
+      .nextui-c-iWjDFM .nextui-c-bmKMKj {
+        z-index: var(--nextui-zIndices-1)
+      }
+  
+      .nextui-c-iWjDFM .nextui-c-bmKMKj .nextui-drip-filler {
+        opacity: 0.25;
+        fill: var(--nextui-colors-accents2)
+      }
+  
+      .nextui-c-bDGMeb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: var(--nextui--buttonPadding);
+        right: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        color: inherit;
+        z-index: var(--nextui-zIndices-1)
+      }
+  
+      .nextui-c-bDGMeb svg {
+        background: transparent
+      }
+  
+      .nextui-c-dIWzTP {
+        --nextui--linkColor: var(--nextui-colors-link);
+        display: flex;
+        align-items: center;
+        line-height: inherit;
+        text-decoration: none;
+        width: fitContent;
+        background-color: transparent;
+        background-image: inherit;
+        -webkit-background-clip: inherit;
+        background-clip: inherit;
+        -webkit-text-fill-color: inherit;
+        color: var(--nextui--linkColor);
+        outline: none;
+        max-width: max-content
+      }
+  
+      .nextui-c-dIWzTP:hover {
+        opacity: 0.8
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-dIWzTP {
+          transition: none
+        }
+      }
+  
+      .nextui-c-STltJ {
+        -webkit-tap-highlight-color: transparent;
+        display: inline-block;
+        vertical-align: center;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        transition: var(--nextui-transitions-default);
+        padding: var(--nextui-space-1) 0;
+        position: relative;
+        cursor: pointer
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-STltJ {
+          transition: none
+        }
+      }
+  
+      .nextui-c-jjKPqy+.nextui-c-itiWTf:where(.nextui-c-huiNHE)>.nextui-c-eJPKci {
+        transform: translateX(calc(var(--nextui--switchWidth) / 15))
+      }
+  
+      .nextui-c-jjKPqy:checked+.nextui-c-itiWTf:where(.nextui-c-huiNHE)>.nextui-c-eJPKci {
+        transform: translateX(calc(var(--nextui--switchWidth) - var(--nextui--switchWidth) / 15 - var(--nextui--switchHeight) * 0.7))
+      }
+  
+      .nextui-c-iFHsrU {
+        border: 0px;
+        clip: rect(0px, 0px, 0px, 0px);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        position: absolute
+      }
+  
+      .nextui-c-itiWTf {
+        opacity: 1;
+        width: var(--nextui--switchWidth);
+        height: var(--nextui--switchHeight);
+        transition: var(--nextui-transitions-default);
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        border-radius: var(--nextui-radii-pill);
+        background: var(--nextui-colors-accents2)
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-itiWTf {
+          transition: none
+        }
+      }
+  
+      .nextui-c-huiNHE {
+        -webkit-tap-highlight-color: transparent
+      }
+  
+      .nextui-c-huiNHE:focus:not(.nextui-c-huiNHE:focus-visible) {
+        box-shadow: none
+      }
+  
+      .nextui-c-huiNHE:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px var(--nextui-colors-background), 0 0 0 4px var(--nextui-colors-primary)
+      }
+  
+      @media not all and (min-resolution: .001dpcm) {
+        .nextui-c-huiNHE {
+          -webkit-tap-highlight-color: transparent;
+          outline: none
+        }
+      }
+  
+      .nextui-c-eJPKci {
+        position: absolute;
+        display: flex;
+        width: calc(var(--nextui--switchHeight) * 0.7);
+        height: calc(var(--nextui--switchHeight) * 0.7);
+        justify-content: center;
+        align-items: center;
+        top: calc(50% - var(--nextui--switchHeight) * 0.35);
+        left: 0;
+        transition: transform 0.25s ease, width 0.2s ease;
+        background: var(--nextui-colors-background);
+        border-radius: var(--nextui-radii-pill)
+      }
+  
+      .nextui-c-eJPKci svg {
+        background: transparent;
+        width: calc(var(--nextui--switchHeight) * 0.44);
+        height: calc(var(--nextui--switchHeight) * 0.44)
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-eJPKci {
+          transition: none
+        }
+      }
+  
+      .nextui-c-iTPCAT {
+        --nextui--navbarListColor: var(--nextui-colors-text);
+        --nextui--navbarListBackgroundColor: var(--nextui-colors-background);
+        --nextui--navbarListBlurBackgroundColor: var(--nextui-colors-backgroundAlpha);
+        --nextui--navbarListBlur: 16px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: var(--nextui--navbarListBackgroundColor);
+        width: 100%;
+        height: 0px;
+        z-index: var(--nextui-zIndices-4);
+        box-sizing: border-box;
+        overflow: hidden
+      }
+  
+      .nextui-c-ewlcFW {
+        padding-top: var(--nextui-space-8);
+        padding-bottom: var(--nextui-space-8);
+        padding-left: var(--nextui--navbarPadding);
+        padding-right: var(--nextui--navbarPadding);
+        overflow-y: scroll;
+        max-height: 100%
+      }
+  
+      .nextui-c-ektsXM {
+        opacity: 0;
+        padding-bottom: var(--nextui-space-6);
+        font-size: var(--nextui-fontSizes-lg);
+        line-height: var(--nextui-lineHeights-lg);
+        font-weight: var(--nextui-fontWeights-normal);
+        transform-origin: top
+      }
+  
+      .nextui-c-jcFxGD {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row
+      }
+  
+      .nextui-c-iwmZdB {
+        --nextui--inputColor: var(--nextui-colors-accents0);
+        --nextui--inputTextColor: var(--nextui-colors-text);
+        --nextui--inputPlaceholderColor: var(--nextui-colors-accents6);
+        --nextui--inputShadow: var(--nextui-shadows-sm);
+        --nextui--inputBorderColor: var(--nextui-colors-border);
+        --nextui--inputHoverBorderColor: var(--nextui-colors-foreground);
+        --nextui--inputLabelColor: var(--nextui--inputHoverBorderColor);
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        -webkit-box-align: center
+      }
+  
+      .nextui-c-ghxhhI {
+        width: 100%;
+        border-radius: var(--nextui--inputBorderRadius)
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-ghxhhI {
+          transition: none
+        }
+      }
+  
+      .nextui-c-eXOOPO {
+        flex: 1;
+        position: relative;
+        border-radius: var(--nextui--inputBorderRadius);
+        background: var(--nextui--inputColor);
+        display: inline-flex;
+        vertical-align: middle;
+        align-items: center;
+        -webkit-user-select: none;
+        user-select: none
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-eXOOPO {
+          transition: none
+        }
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-eXOOPO:before {
+          transition: none
+        }
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-eXOOPO:after {
+          transition: none
+        }
+      }
+  
+      .nextui-c-jeuecp {
+        padding: 0;
+        font-size: var(--nextui--inputFontSize);
+        background: transparent;
+        border: none;
+        color: var(--nextui--inputTextColor);
+        border-radius: 0;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        min-width: 0;
+        -webkit-appearance: none
+      }
+  
+      .nextui-c-jeuecp ::placeholder {
+        color: var(--nextui--inputPlaceholderColor);
+        transition: opacity 0.25s ease 0s;
+        -moz-transition: opacity 0.25s ease 0s;
+        -ms-transition: opacity 0.25s ease 0s;
+        -webkit-transition: opacity 0.25s ease 0s
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-jeuecp {
+          transition: none
+        }
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-jeuecp::placeholder {
+          transition: none
+        }
+      }
+  
+      .nextui-c-jeuecp:disabled {
+        pointer-events: none;
+        color: var(--nextui-colors-accents4);
+        cursor: not-allowed
+      }
+  
+      .nextui-c-gJvMas {
+        position: absolute;
+        opacity: 0;
+        bottom: calc(var(--nextui--inputHeightRatio) * calc(var(--nextui-space-5)*-1))
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-gJvMas {
+          transition: none
+        }
+      }
+  
+      .nextui-c-bZLhCa {
+        width: 100%;
+        max-width: 100%;
+        position: relative
+      }
+  
+      .nextui-c-kRHeuF {
+        margin: 0;
+        box-sizing: border-box;
+        padding: var(--nextui--gridGapUnit)
+      }
+  
+      .nextui-c-BDLTQ {
+        --nextui--cardTextColor: var(--nextui-colors-text);
+        margin: 0;
+        padding: 0;
+        border-radius: var(--nextui-radii-lg);
+        background: transparent !important;
+        color: var(--nextui--cardTextColor);
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        .nextui-c-BDLTQ {
+          transition: none
+        }
+      }
+  
+      .nextui-c-BDLTQ .nextui-image {
+        width: 100%
+      }
+  
+      .nextui-c-BDLTQ .nextui-c-bmKMKj {
+        z-index: var(--nextui-zIndices-1)
+      }
+  
+      .nextui-c-BDLTQ .nextui-c-bmKMKj .nextui-drip-filler {
+        opacity: 0.25;
+        fill: var(--nextui-colors-accents6)
+      }
+  
+      .nextui-c-jMTBsW {
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden
+      }
+  
+      .nextui-c-eFfoBo {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex: 1 1 auto;
+        flex-direction: column;
+        justify-content: inherit;
+        align-items: inherit;
+        align-content: inherit;
+        padding-top: var(--nextui-space-lg);
+        padding-bottom: var(--nextui-space-lg);
+        padding-left: var(--nextui-space-sm);
+        padding-right: var(--nextui-space-sm);
+        overflow-y: auto;
+        position: relative;
+        text-align: left
+      }
+  
+      .nextui-c-jxECYO {
+        width: 100%;
+        display: flex;
+        flex-shrink: 0;
+        z-index: var(--nextui-zIndices-1);
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        color: inherit;
+        padding: var(--nextui-space-sm)
+      }
+    }
+  
+    --sxs {
+      --sxs: 3 nextui-c-hhqfap-gaIaSO-variant-static nextui-c-hhqfap-beFEYN-maxWidth-lg nextui-c-hhqfap-hemDFs-isBordered-true nextui-c-hhqfap-kAwfsS-disableShadow-false nextui-c-hhqfap-gqZKcP-disableBlur-false nextui-c-PJLV-kuPOmo-showIn-xs nextui-c-PJLV-gulvcB-isFocusVisible-false nextui-c-PJLV-ghzjVU-hideIn-xs nextui-c-PJLV-gisWVZ-hideIn-sm nextui-c-eYXmfb-kJGdUE-activeColor-default nextui-c-eYXmfb-hYJzFf-underlineHeight-normal nextui-c-iWjDFM-hkKLfu-color-default nextui-c-iWjDFM-gkIlwi-size-md nextui-c-iWjDFM-cwXrJp-borderWeight-normal nextui-c-iWjDFM-lhjIIJ-light-true nextui-c-iWjDFM-exaRme-auto-true nextui-c-bDGMeb-jzMUFa-isAuto-true nextui-c-bDGMeb-jeNDWm-isRight-true nextui-c-eYXmfb-cdrGrt-isActive-true nextui-c-dIWzTP-hfnKRU-color-default nextui-c-dIWzTP-isWIbj-animated-true nextui-c-iWjDFM-cyFBRX-flat-true nextui-c-dIWzTP-gwVlaX-color-inherit nextui-c-STltJ-bwQcWP-color-default nextui-c-STltJ-JJjKI-size-md nextui-c-STltJ-bgIFDi-borderWeight-normal nextui-c-jjKPqy-gwHlSF-animated-true nextui-c-itiWTf-iXJPXp-animated-true nextui-c-iTPCAT-OSUxW-disableBlur-false nextui-c-ektsXM-kJGdUE-activeColor-default nextui-c-jcFxGD-bICGYT-justify-center nextui-c-jcFxGD-XefLA-wrap-wrap nextui-c-iwmZdB-jTfqsF-helperColor-default nextui-c-iwmZdB-dpkacN-borderWeight-normal nextui-c-iwmZdB-bkiCag-size-lg nextui-c-ghxhhI-fjttfO-isTextarea-false nextui-c-ghxhhI-iNKybL-animated-true nextui-c-eXOOPO-iNKybL-shadow-true nextui-c-eXOOPO-ccrOPm-underlined-false nextui-c-eXOOPO-lkBNdM-isTextarea-false nextui-c-bZLhCa-qCmpO-color-default nextui-c-jcFxGD-iTKOFX-direction-column nextui-c-jcFxGD-jroWjL-align-center nextui-c-PJLV-gVAYaD-weight-normal nextui-c-PJLV-iqCzBn-weight-semibold nextui-c-PJLV-iqKmYR-weight-medium nextui-c-BDLTQ-iDQuvU-variant-shadow nextui-c-BDLTQ-fmlsco-borderWeight-light nextui-c-BDLTQ-cuwTXc-disableAnimation-false nextui-c-PJLV-hyvuql-weight-bold nextui-c-jcFxGD-JrrAq-align-start nextui-c-jcFxGD-ejCoEP-direction-row
+    }
+  
+    @media  (min-width: 768px) {
+      .nextui-c-hhqfap-gaIaSO-variant-static {
+        position: static
+      }
+  
+      .nextui-c-hhqfap-beFEYN-maxWidth-lg {
+        --nextui--navbarContainerMaxWidth: var(--nextui-breakpoints-lg)
+      }
+  
+      .nextui-c-hhqfap-hemDFs-isBordered-true .nextui-c-egxOLa {
+        border-bottom: var(--nextui--navbarBorderWeight) solid var(--nextui--navbarBorderColor)
+      }
+  
+      .nextui-c-hhqfap-kAwfsS-disableShadow-false {
+        box-shadow: var(--nextui--navbarShadow)
+      }
+  
+      @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        .nextui-c-hhqfap-gqZKcP-disableBlur-false .nextui-c-egxOLa {
+          background: var(--nextui--navbarBlurBackgroundColor);
+          -webkit-backdrop-filter: saturate(180%) blur(var(--nextui--navbarBlur));
+          backdrop-filter: saturate(180%) blur(var(--nextui--navbarBlur))
+        }
+      }
+  
+      @media (min-width: 650px) {
+        .nextui-c-PJLV-kuPOmo-showIn-xs {
+          display: none
+        }
+      }
+  
+      .nextui-c-PJLV-gulvcB-isFocusVisible-false {
+        outline: none
+      }
+  
+      @media (max-width: 650px) {
+        .nextui-c-PJLV-ghzjVU-hideIn-xs {
+          display: none
+        }
+      }
+  
+      @media (max-width: 960px) {
+        .nextui-c-PJLV-gisWVZ-hideIn-sm {
+          display: none
+        }
+      }
+  
+      .nextui-c-eYXmfb-kJGdUE-activeColor-default {
+        --nextui--navbarItemActiveColor: var(--nextui-colors-link);
+        --nextui--navbarItemHighlightBackgroundColor: var(--nextui-colors-primaryLight);
+        --nextui--navbarItemHighlightTextColor: var(--nextui-colors-primaryLightContrast);
+        --nextui--navbarItemHighlightSolidBackgroundColor: var(--nextui-colors-primary);
+        --nextui--navbarItemHighlightSolidTextColor: var(--nextui-colors-primarySolidContrast)
+      }
+  
+      .nextui-c-eYXmfb-hYJzFf-underlineHeight-normal {
+        --nextui--navbarItemUnderlineHeight: 4px
+      }
+  
+      .nextui-c-iWjDFM-hkKLfu-color-default {
+        background: var(--nextui-colors-primary);
+        color: var(--nextui-colors-primarySolidContrast)
+      }
+  
+      .nextui-c-iWjDFM-gkIlwi-size-md {
+        --nextui--buttonPadding: var(--nextui-space-7);
+        --nextui--buttonBorderRadius: var(--nextui-radii-md);
+        --nextui--buttonHeight: var(--nextui-space-14);
+        padding-left: var(--nextui-space-7);
+        padding-right: var(--nextui-space-7);
+        height: var(--nextui--buttonHeight);
+        line-height: var(--nextui-space-14);
+        width: auto;
+        min-width: var(--nextui-space-48);
+        font-size: var(--nextui-fontSizes-sm)
+      }
+  
+      .nextui-c-iWjDFM-cwXrJp-borderWeight-normal {
+        border-width: var(--nextui-borderWeights-normal);
+        --nextui--buttonBorderWeight: var(--nextui-borderWeights-normal)
+      }
+  
+      .nextui-c-iWjDFM-lhjIIJ-light-true {
+        background: transparent
+      }
+  
+      .nextui-c-iWjDFM-lhjIIJ-light-true .nextui-c-bmKMKj .nextui-drip-filler {
+        opacity: 0.8;
+        fill: var(--nextui-colors-accents2)
+      }
+  
+      .nextui-c-iWjDFM-exaRme-auto-true {
+        width: auto;
+        min-width: min-content
+      }
+  
+      .nextui-c-bDGMeb-jzMUFa-isAuto-true {
+        position: relative;
+        transform: none;
+        top: 0%
+      }
+  
+      .nextui-c-bDGMeb-jeNDWm-isRight-true {
+        right: var(--nextui--buttonPadding);
+        left: auto
+      }
+  
+      .nextui-c-eYXmfb-cdrGrt-isActive-true {
+        color: var(--nextui--navbarItemActiveColor);
+        --nextui--navbarItemFontWeight: var(--nextui-fontWeights-semibold)
+      }
+  
+      .nextui-c-dIWzTP-hfnKRU-color-default {
+        --nextui--linkColor: var(--nextui-colors-link)
+      }
+  
+      .nextui-c-dIWzTP-isWIbj-animated-true {
+        transition: opacity 0.25s ease 0s, box-shadow 0.25s ease 0s
+      }
+  
+      .nextui-c-iWjDFM-cyFBRX-flat-true {
+        color: var(--nextui-colors-text)
+      }
+  
+      .nextui-c-dIWzTP-gwVlaX-color-inherit {
+        --nextui--linkColor: inherit
+      }
+  
+      .nextui-c-STltJ-bwQcWP-color-default {
+        --nextui--switchColor: var(--nextui-colors-primary);
+        --nextui--switchColorShadow: var(--nextui-colors-primaryShadow);
+        --nextui--switchColorHover: var(--nextui-colors-primarySolidHover)
+      }
+  
+      .nextui-c-STltJ-JJjKI-size-md {
+        --nextui--switchWidth: var(--nextui-space-15);
+        --nextui--switchHeight: var(--nextui-space-11);
+        width: var(--nextui--switchWidth);
+        max-width: var(--nextui--switchWidth);
+        height: var(--nextui--switchHeight)
+      }
+  
+      .nextui-c-STltJ-bgIFDi-borderWeight-normal {
+        --nextui--switchBorderW: var(--nextui-borderWeights-normal)
+      }
+  
+      .nextui-c-jjKPqy-gwHlSF-animated-true+.nextui-c-itiWTf:where(.nextui-c-huiNHE):active>.nextui-c-eJPKci {
+        transform: translateX(calc(var(--nextui--switchWidth) / 7.5))
+      }
+  
+      .nextui-c-jjKPqy-gwHlSF-animated-true:checked+.nextui-c-itiWTf:where(.nextui-c-huiNHE):active>.nextui-c-eJPKci {
+        transform: translateX(calc(var(--nextui--switchWidth) - var(--nextui--switchWidth) / 7.5 - var(--nextui--switchWidth) / 10 - var(--nextui--switchHeight) * 0.7))
+      }
+  
+      .nextui-c-itiWTf-iXJPXp-animated-true:active .nextui-c-eJPKci {
+        width: calc(var(--nextui--switchHeight) * 0.7 + (var(--nextui--switchWidth) / 10))
+      }
+  
+      @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        .nextui-c-iTPCAT-OSUxW-disableBlur-false {
+          background: var(--nextui--navbarListBlurBackgroundColor);
+          -webkit-backdrop-filter: saturate(180%) blur(var(--nextui--navbarListBlur));
+          backdrop-filter: saturate(180%) blur(var(--nextui--navbarListBlur))
+        }
+      }
+  
+      @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        @media not all and (min-resolution:.001dpcm) {
+          .nextui-c-iTPCAT-OSUxW-disableBlur-false .nextui-c-jklhtj:where(.nextui-c-ewlcFW) {
+            background: var(--nextui--navbarListBlurBackgroundColor);
+            -webkit-backdrop-filter: saturate(180%) blur(var(--nextui--navbarListBlur));
+            backdrop-filter: saturate(180%) blur(var(--nextui--navbarListBlur))
+          }
+        }
+      }
+  
+      .nextui-c-ektsXM-kJGdUE-activeColor-default {
+        --nextui--navbarItemActiveColor: var(--nextui-colors-link);
+        --nextui--navbarItemHighlightBackgroundColor: var(--nextui-colors-primaryLight);
+        --nextui--navbarItemHighlightTextColor: var(--nextui-colors-primaryLightContrast);
+        --nextui--navbarItemHighlightSolidBackgroundColor: var(--nextui-colors-primary);
+        --nextui--navbarItemHighlightSolidTextColor: var(--nextui-colors-primarySolidContrast)
+      }
+  
+      .nextui-c-jcFxGD-bICGYT-justify-center {
+        justify-content: center
+      }
+  
+      .nextui-c-jcFxGD-XefLA-wrap-wrap {
+        flex-wrap: wrap
+      }
+  
+      .nextui-c-iwmZdB-jTfqsF-helperColor-default {
+        --nextui--inputHelperColor: var(--nextui-colors-text)
+      }
+  
+      .nextui-c-iwmZdB-dpkacN-borderWeight-normal {
+        --nextui--inputBorderWeight: var(--nextui-borderWeights-normal)
+      }
+  
+      .nextui-c-iwmZdB-bkiCag-size-lg {
+        --nextui--inputBorderRadius: var(--nextui-space-7);
+        --nextui--inputFontSize: var(--nextui-fontSizes-md);
+        --nextui--inputHeightRatio: 2.2;
+        border-radius: var(--nextui--inputBorderRadius)
+      }
+  
+      .nextui-c-ghxhhI-fjttfO-isTextarea-false {
+        display: inline-flex;
+        align-items: center;
+        height: calc(var(--nextui--inputHeightRatio) * var(--nextui-space-9))
+      }
+  
+      .nextui-c-ghxhhI-iNKybL-animated-true {
+        transition: var(--nextui-transitions-default)
+      }
+  
+      .nextui-c-eXOOPO-iNKybL-shadow-true {
+        transition: var(--nextui-transitions-default)
+      }
+  
+      .nextui-c-eXOOPO-ccrOPm-underlined-false .nextui-c-jeuecp {
+        margin: var(--nextui-space-2) var(--nextui-space-5)
+      }
+  
+      .nextui-c-eXOOPO-lkBNdM-isTextarea-false {
+        height: 100%
+      }
+  
+      .nextui-c-bZLhCa-qCmpO-color-default {
+        background: var(--nextui-colors-border)
+      }
+  
+      .nextui-c-jcFxGD-iTKOFX-direction-column {
+        flex-direction: column
+      }
+  
+      .nextui-c-jcFxGD-jroWjL-align-center {
+        align-items: center
+      }
+  
+      .nextui-c-PJLV-gVAYaD-weight-normal {
+        font-weight: var(--nextui-fontWeights-normal)
+      }
+  
+      .nextui-c-PJLV-iqCzBn-weight-semibold {
+        font-weight: var(--nextui-fontWeights-semibold)
+      }
+  
+      .nextui-c-PJLV-iqKmYR-weight-medium {
+        font-weight: var(--nextui-fontWeights-medium)
+      }
+  
+      .nextui-c-BDLTQ-iDQuvU-variant-shadow {
+        filter: var(--nextui-dropShadows-lg)
+      }
+  
+      @media not all and (min-resolution: .001dpcm) {
+        .nextui-c-BDLTQ-iDQuvU-variant-shadow {
+          box-shadow: var(--nextui-shadows-lg);
+          filter: var(--nextui-dropShadowsnone)
+        }
+      }
+  
+      .nextui-c-BDLTQ-fmlsco-borderWeight-light {
+        border-width: var(--nextui-borderWeights-light)
+      }
+  
+      .nextui-c-BDLTQ-cuwTXc-disableAnimation-false {
+        transition: var(--nextui-transitions-card)
+      }
+  
+      .nextui-c-PJLV-hyvuql-weight-bold {
+        font-weight: var(--nextui-fontWeights-bold)
+      }
+  
+      .nextui-c-jcFxGD-JrrAq-align-start {
+        align-items: flex-start
+      }
+  
+      .nextui-c-jcFxGD-ejCoEP-direction-row {
+        flex-direction: row
+      }
+    }
+  
+    --sxs {
+      --sxs: 5 nextui-c-iWjDFM-gglxka-cv nextui-c-iWjDFM-dvpxFC-cv nextui-c-bDGMeb-gLOJOp-cv nextui-c-iWjDFM-kaRBtV-cv
+    }
+  
+    @media  (min-width: 768px) {
+      .nextui-c-iWjDFM-gglxka-cv {
+        padding-left: var(--nextui-space-9);
+        padding-right: var(--nextui-space-9);
+        min-width: min-content
+      }
+  
+      .nextui-c-iWjDFM-dvpxFC-cv {
+        background: transparent;
+        color: var(--nextui-colors-text)
+      }
+  
+      .nextui-c-iWjDFM-dvpxFC-cv .nextui-c-bmKMKj .nextui-drip-filler {
+        opacity: 0.8;
+        fill: var(--nextui-colors-primaryLightActive)
+      }
+  
+      .nextui-c-bDGMeb-gLOJOp-cv {
+        order: 2;
+        margin-left: calc(var(--nextui--buttonPadding) / 2);
+        right: 0%;
+        left: 0%
+      }
+  
+      .nextui-c-iWjDFM-kaRBtV-cv {
+        background: var(--nextui-colors-primaryLight);
+        color: var(--nextui-colors-primaryLightContrast)
+      }
+  
+      .nextui-c-iWjDFM-kaRBtV-cv .nextui-c-bmKMKj .nextui-drip-filler {
+        opacity: 0.4;
+        fill: var(--nextui-colors-primary)
+      }
+    }
+  
+    --sxs {
+      --sxs: 6 nextui-c-lesPJm-ihNeCDy-css nextui-c-hhqfap-ihUpQIA-css nextui-c-PJLV-ikpPLrz-css nextui-c-jklhtj-ieyRFBa-css nextui-c-kOXsPe-iPJLV-css nextui-c-iWjDFM-ifUdHdz-css nextui-c-bDGMeb-iefzdUn-css nextui-c-kOXsPe-ifJiMky-css nextui-c-dIWzTP-ibzThln-css nextui-c-jklhtj-ijFvnTw-css nextui-c-iWjDFM-iPJLV-css nextui-c-dIWzTP-ilfIoom-css nextui-c-PJLV-icQelhk-css nextui-c-iTPCAT-iPJLV-css nextui-c-kOXsPe-ibscjfe-css nextui-c-jcFxGD-ihippxw-css nextui-c-lesPJm-ivqBSd-css nextui-c-lesPJm-iiWskpP-css nextui-c-PJLV-ifYaywS-css nextui-c-PJLV-ihdSyjb-css nextui-c-PJLV-iibmwaE-css nextui-c-jcFxGD-ihpsNaH-css nextui-c-iwmZdB-iiIdOsz-css nextui-c-jcFxGD-ifgjnYA-css nextui-c-jcFxGD-iccnVFq-css nextui-c-PJLV-iilRglJ-css nextui-c-lesPJm-ihUeRiJ-css nextui-c-bZLhCa-icdXSlG-css nextui-c-jcFxGD-ijZWZTg-css nextui-c-PJLV-ibEZomC-css nextui-c-PJLV-ihinvMx-css nextui-c-kRHeuF-ikvVQpZ-css nextui-c-kRHeuF-ibdhGAl-css nextui-c-PJLV-iiehzTA-css nextui-c-bZLhCa-irBAIG-css nextui-c-jcFxGD-ieXqhOb-css nextui-c-PJLV-ijZheSK-css nextui-c-PJLV-ijnlmIz-css nextui-c-PJLV-ijRhPer-css nextui-c-jcFxGD-ihoUdLq-css nextui-c-lesPJm-ihlZyWM-css nextui-c-PJLV-ikDIYan-css nextui-c-jcFxGD-idGQlJx-css nextui-c-jcFxGD-ihQOVev-css nextui-c-PJLV-ihhnAfn-css nextui-c-lesPJm-ijRTPYU-css nextui-c-jcFxGD-ijDuYwJ-css nextui-c-PJLV-iesrEsO-css nextui-c-jcFxGD-idqZRdR-css nextui-c-BDLTQ-ieqgtWo-css nextui-c-jcFxGD-igzZQNY-css nextui-c-jcFxGD-icYoMlo-css nextui-c-jcFxGD-ibLRtvA-css nextui-c-jcFxGD-iiJrAbR-css nextui-c-PJLV-iJovpQ-css nextui-c-PJLV-iHmvlt-css nextui-c-jcFxGD-idXTJLY-css nextui-c-PJLV-idCYWKQ-css nextui-c-lesPJm-ijzDoiW-css nextui-c-PJLV-icEHJzu-css nextui-c-jcFxGD-iiPboJn-css nextui-c-jcFxGD-iknyMEz-css nextui-c-jcFxGD-ibeFbYl-css nextui-c-BDLTQ-ihoqTsZ-css nextui-c-kRHeuF-idjRAkN-css nextui-c-kRHeuF-icxokNG-css nextui-c-PJLV-ibbPvYX-css nextui-c-PJLV-iifkTWz-css nextui-c-eFfoBo-ijkKNOw-css nextui-c-PJLV-ibCPIIV-css nextui-c-iWjDFM-icczoiT-css nextui-c-bZLhCa-iiMwZzC-css nextui-c-jcFxGD-ihJQHbS-css nextui-c-jcFxGD-ijrwwRB-css nextui-c-PJLV-ikcVOUh-css nextui-c-jcFxGD-ihgtzMD-css nextui-c-jcFxGD-ieKWVTQ-css nextui-c-jcFxGD-ifVlWzK-css nextui-c-jcFxGD-icurleA-css nextui-c-PJLV-ilmxQdK-css nextui-c-lesPJm-ifGHEql-css nextui-c-jcFxGD-ifTGDJt-css nextui-c-jcFxGD-idNipCG-css nextui-c-lesPJm-iiDLjkF-css nextui-c-lesPJm-ikjSPLe-css nextui-c-bZLhCa-ibGGthZ-css nextui-c-jcFxGD-ikjfjYH-css nextui-c-jcFxGD-ijFvnTw-css nextui-c-jcFxGD-idCpVsf-css
+    }
+  
+    @media  (min-width: 960px) {
+      .nextui-c-lesPJm-ihNeCDy-css {
+        max-width: 100%;
+        background: var(--nextui-colors-background)
+      }
+  
+      .nextui-c-hhqfap-ihUpQIA-css {
+        overflow: hidden
+      }
+  
+      .nextui-c-hhqfap-ihUpQIA-css .nextui-navbar-container {
+        background: var(--nextui-colors-background);
+        border-bottom: none
+      }
+  
+      .nextui-c-PJLV-ikpPLrz-css {
+        color: inherit;
+
+        text-transform: none
+      }
+  
+      .nextui-c-jklhtj-ieyRFBa-css {
+        gap: var(--nextui-space-10);
+        padding-left: 6rem
+      }
+  
+      .nextui-c-iWjDFM-ifUdHdz-css[aria-haspopup="true"].nextui-c-iWjDFM-ifUdHdz-css[aria-expanded="true"] {
+        opacity: 0.7;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform: translateZ(0) scale(0.97)
+      }
+  
+      .nextui-c-iWjDFM-ifUdHdz-css .nextui-button-icon-right,
+      .nextui-c-iWjDFM-ifUdHdz-css .nextui-button-text-right {
+        pointer-events: none
+      }
+  
+      .nextui-c-iWjDFM-ifUdHdz-css {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+  
+      .nextui-c-iWjDFM-ifUdHdz-css svg {
+        pointer-events: none
+      }
+  
+      .nextui-c-bDGMeb-iefzdUn-css {
+        margin-top: var(--nextui-space-1)
+      }
+  
+      .nextui-c-kOXsPe-ifJiMky-css {
+        --nextui--navbarItemFontWeight: var(--nextui-fontWeights-semibold)
+      }
+  
+      .nextui-c-dIWzTP-ibzThln-css {
+        color: inherit;
+        height: 100%;
+        --nextui--linkBackgroundColor:
+      }
+  
+      .nextui-c-jklhtj-ijFvnTw-css {
+        gap: var(--nextui-space-10)
+      }
+  
+      .nextui-c-dIWzTP-ilfIoom-css {
+        min-width: 100%;
+        --nextui--linkBackgroundColor:
+      }
+  
+      .nextui-c-PJLV-icQelhk-css {
+        fill: var(--nextui-colors-accents9)
+      }
+  
+      .nextui-c-kOXsPe-ibscjfe-css {
+        opacity: var(--nextui--collapseItemOpacity);
+        transition: var(--netxui--collapseItemTransition);
+        transform: var(--nextui--collapseItemTransform)
+      }
+  
+      .nextui-c-jcFxGD-ihippxw-css {
+        gap: var(--nextui-space-3);
+        padding-left: var(--nextui-space-6);
+        padding-right: var(--nextui-space-6);
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-jcFxGD-ihippxw-css {
+          flex-direction: row;
+          margin-top: var(--nextui-space-20)
+        }
+      }
+  
+      .nextui-c-lesPJm-ivqBSd-css {
+        padding-top: var(--nextui-space-13);
+        display: flex;
+        flex-direction: column;
+        gap: var(--nextui-space-5)
+      }
+  
+      .nextui-c-lesPJm-iiWskpP-css {
+        max-width: 600px
+      }
+  
+      .nextui-c-PJLV-ifYaywS-css {
+        color: var(--nextui-colors-text);
+        text-transform: none;
+        display: inline
+      }
+  
+      .nextui-c-PJLV-ihdSyjb-css {
+        color: var(--nextui-colors-primary);
+        text-transform: none;
+        display: inline
+      }
+  
+      .nextui-c-PJLV-iibmwaE-css {
+        color: var(--nextui-colors-accents8);
+        font-size: var(--nextui-fontSizes-lg);
+        text-transform: none;
+        max-width: 400px
+      }
+  
+      .nextui-c-jcFxGD-ihpsNaH-css {
+        gap: var(--nextui-space-8);
+        padding-top: var(--nextui-space-4)
+      }
+  
+      .nextui-c-iwmZdB-iiIdOsz-css {
+        width: initial
+      }
+  
+      .nextui-c-jcFxGD-ifgjnYA-css {
+        gap: var(--nextui-space-8);
+        padding-top: var(--nextui-space-7);
+        padding-bottom: var(--nextui-space-7)
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-jcFxGD-ifgjnYA-css {
+          padding-top: var(--nextui-space-4);
+          padding-bottom: var(--nextui-space-4)
+        }
+      }
+  
+      .nextui-c-jcFxGD-iccnVFq-css {
+        color: var(--nextui-colors-accents7);
+        align-items: center
+      }
+  
+      .nextui-c-PJLV-iilRglJ-css {
+        fill: var(--nextui-colors-green600)
+      }
+  
+      .nextui-c-lesPJm-ihUeRiJ-css img {
+        width: 775px;
+        object-fit: contain
+      }
+  
+      .nextui-c-bZLhCa-icdXSlG-css {
+        margin: 0 0;
+        height: calc(1 * 1px);
+        position: absolute;
+        inset: 0p;
+        left: 0;
+        margin-top: var(--nextui-space-10)
+      }
+  
+      .nextui-c-jcFxGD-ijZWZTg-css {
+        padding-top: var(--nextui-space-20);
+        padding-left: var(--nextui-space-6);
+        padding-right: var(--nextui-space-6)
+      }
+  
+      @media (min-width: 1280px) {
+        .nextui-c-jcFxGD-ijZWZTg-css {
+          padding-left: var(--nextui-space-64);
+          padding-right: var(--nextui-space-64)
+        }
+      }
+  
+      .nextui-c-PJLV-ibEZomC-css {
+        color: var(--nextui-colors-text);
+        text-transform: none;
+        text-align: center
+      }
+  
+      .nextui-c-PJLV-ihinvMx-css {
+        color: var(--nextui-colors-accents8);
+        font-size: var(--nextui-fontSizes-lg);
+        text-transform: none;
+        max-width: 800px;
+        text-align: center
+      }
+  
+      .nextui-c-kRHeuF-ikvVQpZ-css {
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .nextui-c-kRHeuF-ikvVQpZ-css.xs {
+        flex-grow: 1;
+        display: inherit;
+        max-width: 100%;
+        flex-basis: 0
+      }
+  
+      @media (max-width: 650px) {
+        .nextui-c-kRHeuF-ikvVQpZ-css.xs {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-kRHeuF-ikvVQpZ-css {
+          width: 100%
+        }
+      }
+  
+      @media (min-width: 1280px) {
+        .nextui-c-kRHeuF-ikvVQpZ-css.md {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 1400px) {
+        .nextui-c-kRHeuF-ikvVQpZ-css.lg {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 1920px) {
+        .nextui-c-kRHeuF-ikvVQpZ-css.xl {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      .nextui-c-kRHeuF-ikvVQpZ-css {
+        --nextui--gridGapUnit: calc(6 * var(--nextui-space-3));
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin: calc(-1 * var(--nextui--gridGapUnit));
+        width: 100%
+      }
+  
+      .nextui-c-kRHeuF-ikvVQpZ-css span {
+        white-space: pre
+      }
+  
+      .nextui-c-kRHeuF-ibdhGAl-css.xs {
+        flex-grow: 1;
+        display: inherit;
+        max-width: 100%;
+        flex-basis: 0
+      }
+  
+      @media (max-width: 650px) {
+        .nextui-c-kRHeuF-ibdhGAl-css.xs {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-kRHeuF-ibdhGAl-css.sm {
+          flex-grow: 0;
+          display: inherit;
+          max-width: 25%;
+          flex-basis: 25%
+        }
+      }
+  
+      @media (min-width: 1280px) {
+        .nextui-c-kRHeuF-ibdhGAl-css.md {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 1400px) {
+        .nextui-c-kRHeuF-ibdhGAl-css.lg {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 1920px) {
+        .nextui-c-kRHeuF-ibdhGAl-css.xl {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      .nextui-c-PJLV-iiehzTA-css {
+        color: var(--nextui-colors-text);
+        font-size: var(--nextui-fontSizes-lg);
+        text-transform: none
+      }
+  
+      .nextui-c-bZLhCa-irBAIG-css {
+        margin: 0 0;
+        height: calc(1 * 1px);
+        position: absolute;
+        inset: 0p;
+        left: 0;
+        margin-top: var(--nextui-space-5)
+      }
+  
+      .nextui-c-jcFxGD-ieXqhOb-css {
+        gap: 1rem;
+        padding-top: var(--nextui-space-20);
+        justify-content: center;
+        align-items: center;
+        padding-left: var(--nextui-space-6);
+        padding-right: var(--nextui-space-6)
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-jcFxGD-ieXqhOb-css {
+          justify-content: space-around;
+          padding-left: var(--nextui-space-32);
+          padding-right: var(--nextui-space-32);
+          flex-direction: row
+        }
+      }
+  
+      @media (min-width: 1280px) {
+        .nextui-c-jcFxGD-ieXqhOb-css {
+          padding-left: var(--nextui-space-64);
+          padding-right: var(--nextui-space-64)
+        }
+      }
+  
+      .nextui-c-PJLV-ijZheSK-css {
+        color: var(--nextui-colors-blue600);
+        text-transform: none
+      }
+  
+      .nextui-c-PJLV-ijnlmIz-css {
+        color: var(--nextui-colors-text);
+        text-transform: none
+      }
+  
+      .nextui-c-PJLV-ijRhPer-css {
+        color: var(--nextui-colors-accents8);
+        text-transform: none;
+        max-width: 400px
+      }
+  
+      .nextui-c-jcFxGD-ihoUdLq-css {
+        padding-top: var(--nextui-space-10);
+        padding-bottom: var(--nextui-space-10);
+        gap: var(--nextui-space-5)
+      }
+  
+      .nextui-c-lesPJm-ihlZyWM-css {
+        width: auto;
+        height: -moz-fit-content;
+        height: fit-content
+      }
+  
+      .nextui-c-PJLV-ikDIYan-css {
+        width: 100%;
+        height: 100%
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-PJLV-ikDIYan-css {
+          width: 300px;
+          height: 300px
+        }
+      }
+  
+      .nextui-c-jcFxGD-idGQlJx-css {
+        gap: 1rem;
+        padding-top: var(--nextui-space-20);
+        justify-content: center;
+        align-items: center;
+        padding-left: var(--nextui-space-6);
+        padding-right: var(--nextui-space-6)
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-jcFxGD-idGQlJx-css {
+          gap: 5rem;
+          flex-direction: row-reverse;
+          padding-left: var(--nextui-space-16);
+          padding-right: var(--nextui-space-16)
+        }
+      }
+  
+      @media (min-width: 1280px) {
+        .nextui-c-jcFxGD-idGQlJx-css {
+          justify-content: space-evenly
+        }
+      }
+  
+      .nextui-c-jcFxGD-ihQOVev-css {
+        padding-top: var(--nextui-space-10);
+        padding-bottom: var(--nextui-space-10)
+      }
+  
+      .nextui-c-PJLV-ihhnAfn-css {
+        color: var(--nextui-colors-accents8);
+        text-transform: none;
+        max-width: 325px
+      }
+  
+      .nextui-c-lesPJm-ijRTPYU-css {
+        padding-left: var(--nextui-space-6);
+        padding-right: var(--nextui-space-6);
+        padding-bottom: var(--nextui-space-14)
+      }
+  
+      .nextui-c-jcFxGD-ijDuYwJ-css {
+        padding-top: var(--nextui-space-20)
+      }
+  
+      .nextui-c-PJLV-iesrEsO-css {
+        color: var(--nextui-colors-accents8);
+        text-transform: none;
+        max-width: 800px;
+        text-align: center
+      }
+  
+      .nextui-c-jcFxGD-idqZRdR-css {
+        gap: 1rem;
+        padding-top: var(--nextui-space-14)
+      }
+  
+      .nextui-c-BDLTQ-ieqgtWo-css {
+        max-width: 500px
+      }
+  
+      .nextui-c-jcFxGD-igzZQNY-css {
+        gap: 0.5rem
+      }
+  
+      .nextui-c-jcFxGD-icYoMlo-css {
+        gap: 1rem;
+        padding-top: var(--nextui-space-8)
+      }
+  
+      .nextui-c-jcFxGD-ibLRtvA-css {
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding-left: var(--nextui-space-6);
+        padding-right: var(--nextui-space-6);
+        padding-top: var(--nextui-space-20);
+        padding-bottom: var(--nextui-space-20);
+        flex-direction: column-reverse
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-jcFxGD-ibLRtvA-css {
+          justify-content: space-around;
+          padding-left: var(--nextui-space-32);
+          padding-right: var(--nextui-space-32);
+          flex-direction: row-reverse
+        }
+      }
+  
+      @media (min-width: 1280px) {
+        .nextui-c-jcFxGD-ibLRtvA-css {
+          padding-left: var(--nextui-space-64);
+          padding-right: var(--nextui-space-64)
+        }
+      }
+  
+      .nextui-c-jcFxGD-iiJrAbR-css {
+        gap: 1.5rem
+      }
+  
+      .nextui-c-PJLV-iJovpQ-css {
+        color: var(--nextui-colors-accents9);
+        text-transform: none;
+        max-width: 400px;
+        display: contents
+      }
+  
+      .nextui-c-PJLV-iHmvlt-css {
+        color: var(--nextui-colors-accents8);
+        text-transform: none;
+        display: contents
+      }
+  
+      .nextui-c-jcFxGD-idXTJLY-css {
+        align-items: center
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-jcFxGD-idXTJLY-css {
+          align-items: start
+        }
+      }
+  
+      .nextui-c-PJLV-idCYWKQ-css {
+        color: var(--nextui-colors-accents8);
+        text-transform: none;
+        max-width: 600px;
+        padding-bottom: var(--nextui-space-8)
+      }
+  
+      .nextui-c-lesPJm-ijzDoiW-css {
+        padding-top: var(--nextui-space-20);
+        padding-bottom: var(--nextui-space-16);
+        padding-left: var(--nextui-space-6);
+        padding-right: var(--nextui-space-6)
+      }
+  
+      .nextui-c-PJLV-icEHJzu-css {
+        color: var(--nextui-colors-text);
+        text-transform: none;
+        max-width: 800px;
+        text-align: center
+      }
+  
+      .nextui-c-jcFxGD-iiPboJn-css {
+        gap: 4rem;
+        padding-top: var(--nextui-space-16)
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-jcFxGD-iiPboJn-css {
+          gap: 10rem
+        }
+      }
+  
+      .nextui-c-jcFxGD-iknyMEz-css {
+        padding-top: var(--nextui-space-20);
+        padding-bottom: var(--nextui-space-20);
+        gap: 1rem;
+        padding-left: var(--nextui-space-6);
+        padding-right: var(--nextui-space-6)
+      }
+  
+      .nextui-c-jcFxGD-ibeFbYl-css {
+        gap: 2rem;
+        width: 100%
+      }
+  
+      .nextui-c-BDLTQ-ihoqTsZ-css {
+        padding: var(--nextui-space-6);
+        max-width: 400px
+      }
+  
+      .nextui-c-kRHeuF-idjRAkN-css.xs {
+        flex-grow: 1;
+        display: inherit;
+        max-width: 100%;
+        flex-basis: 0
+      }
+  
+      @media (max-width: 650px) {
+        .nextui-c-kRHeuF-idjRAkN-css.xs {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-kRHeuF-idjRAkN-css.sm {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 1280px) {
+        .nextui-c-kRHeuF-idjRAkN-css.md {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 1400px) {
+        .nextui-c-kRHeuF-idjRAkN-css.lg {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 1920px) {
+        .nextui-c-kRHeuF-idjRAkN-css.xl {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      .nextui-c-kRHeuF-idjRAkN-css {
+        --nextui--gridGapUnit: calc(0 * var(--nextui-space-3));
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin: calc(-1 * var(--nextui--gridGapUnit));
+        width: calc(100% + var(--nextui--gridGapUnit) * 2);
+        padding-left: var(--nextui-space-6)
+      }
+  
+      .nextui-c-kRHeuF-icxokNG-css.xs {
+        flex-grow: 0;
+        display: inherit;
+        max-width: 100%;
+        flex-basis: 100%
+      }
+  
+      @media (max-width: 650px) {
+        .nextui-c-kRHeuF-icxokNG-css.xs {
+          flex-grow: 0;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 100%
+        }
+      }
+  
+      @media (min-width: 960px) {
+        .nextui-c-kRHeuF-icxokNG-css.sm {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 1280px) {
+        .nextui-c-kRHeuF-icxokNG-css.md {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 1400px) {
+        .nextui-c-kRHeuF-icxokNG-css.lg {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      @media (min-width: 1920px) {
+        .nextui-c-kRHeuF-icxokNG-css.xl {
+          flex-grow: 1;
+          display: inherit;
+          max-width: 100%;
+          flex-basis: 0
+        }
+      }
+  
+      .nextui-c-PJLV-ibbPvYX-css {
+        color: var(--nextui-colors-text);
+        text-transform: none;
+        line-height: var(--nextui-lineHeights-xs)
+      }
+  
+      .nextui-c-PJLV-iifkTWz-css {
+        color: var(--nextui-colors-accents8);
+        text-transform: none
+      }
+  
+      .nextui-c-eFfoBo-ijkKNOw-css {
+        padding-top: var(--nextui-space-2);
+        padding-bottom: var(--nextui-space-2)
+      }
+  
+      .nextui-c-PJLV-ibCPIIV-css {
+        color: var(--nextui-colors-text);
+        text-transform: none;
+        display: contents
+      }
+  
+      .nextui-c-iWjDFM-icczoiT-css {
+        margin-top: var(--nextui-space-7);
+        margin-bottom: var(--nextui-space-12)
+      }
+  
+      .nextui-c-bZLhCa-iiMwZzC-css {
+        margin: 0 0;
+        height: calc(1 * 1px)
+      }
+  
+      .nextui-c-jcFxGD-ihJQHbS-css {
+        padding-top: var(--nextui-space-2);
+        padding-bottom: var(--nextui-space-2);
+        gap: var(--nextui-space-2)
+      }
+  
+      .nextui-c-jcFxGD-ijrwwRB-css {
+        padding-top: var(--nextui-space-20);
+        padding-bottom: var(--nextui-space-20);
+        gap: var(--nextui-space-18);
+        padding-left: var(--nextui-space-6);
+        padding-right: var(--nextui-space-6)
+      }
+  
+      .nextui-c-PJLV-ikcVOUh-css {
+        color: var(--nextui-colors-accents8);
+        text-transform: none;
+        max-width: 700px;
+        text-align: center
+      }
+  
+      .nextui-c-jcFxGD-ihgtzMD-css {
+        gap: var(--nextui-space-10)
+      }
+  
+      @media (min-width: 1400px) {
+        .nextui-c-jcFxGD-ihgtzMD-css {
+          padding-left: var(--nextui-space-64);
+          padding-right: var(--nextui-space-64)
+        }
+      }
+  
+      .nextui-c-jcFxGD-ieKWVTQ-css {
+        gap: var(--nextui-space-5)
+      }
+  
+      .nextui-c-jcFxGD-ifVlWzK-css {
+        gap: var(--nextui-space-3)
+      }
+  
+      .nextui-c-jcFxGD-icurleA-css {
+        padding-top: var(--nextui-space-20);
+        padding-bottom: var(--nextui-space-20);
+        padding-left: var(--nextui-space-6);
+        padding-right: var(--nextui-space-6)
+      }
+  
+      .nextui-c-PJLV-ilmxQdK-css {
+        color: var(--nextui-colors-accents8);
+        text-transform: none;
+        padding-bottom: var(--nextui-space-15);
+        text-align: center
+      }
+  
+      .nextui-c-lesPJm-ifGHEql-css {
+        width: 100%
+      }
+  
+      .nextui-c-jcFxGD-ifTGDJt-css {
+        gap: var(--nextui-space-10)
+      }
+  
+      .nextui-c-jcFxGD-ifTGDJt-css ul {
+        margin: 0
+      }
+  
+      .nextui-c-jcFxGD-idNipCG-css {
+        gap: var(--nextui-space-5);
+        width: 250px
+      }
+  
+      .nextui-c-lesPJm-iiDLjkF-css {
+        gap: var(--nextui-space-5);
+        list-style: none
+      }
+  
+      .nextui-c-lesPJm-ikjSPLe-css {
+        padding-left: var(--nextui-space-10);
+        padding-right: var(--nextui-space-10)
+      }
+  
+      @media (min-width: 1280px) {
+        .nextui-c-lesPJm-ikjSPLe-css {
+          padding-left: var(--nextui-space-56);
+          padding-right: var(--nextui-space-56)
+        }
+      }
+  
+      .nextui-c-bZLhCa-ibGGthZ-css {
+        margin: 0 0;
+        height: calc(1 * 1px);
+        margin-top: var(--nextui-space-14);
+        display: flex;
+        justify-content: center
+      }
+  
+      .nextui-c-jcFxGD-ikjfjYH-css {
+        padding-top: var(--nextui-space-8);
+        gap: var(--nextui-space-10);
+        justify-content: center
+      }
+  
+      @media (min-width: 1280px) {
+        .nextui-c-jcFxGD-ikjfjYH-css {
+          justify-content: space-between
+        }
+      }
+  
+      .nextui-c-jcFxGD-ijFvnTw-css {
+        gap: var(--nextui-space-10)
+      }
+  
+      .nextui-c-jcFxGD-idCpVsf-css {
+        gap: var(--nextui-space-6)
+      }
+    }
+  
